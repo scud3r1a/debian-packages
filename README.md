@@ -11,7 +11,7 @@ For the best experience, please use an distribution version comparable with Ubun
 
 Thanks, 
 
-##Kutsubato, gitoidevelopment
+###Kutsubato @ gitoidevelopment
 
 
 
