@@ -14,7 +14,3 @@ Thanks,
 ####Kutsubato @ gitoidevelopment
 
 ###https://gitoidevelopment.github.io/InstallStart/
-
-
-
-
