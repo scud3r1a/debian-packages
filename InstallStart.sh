@@ -1,11 +1,3 @@
-#UPDATE PREPARATION
-echo
-echo ___________________________________________________
-echo 
-echo UPDATE PREPARATION
-echo ___________________________________________________
-echo 
-
 #reading repository list
 sudo apt-get update
 
@@ -25,21 +17,13 @@ sudo add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --y
 sudo add-apt-repository 'deb http://deb.torproject.org/torproject.org utopic main' --yes
 sudo add-apt-repository 'deb-src http://deb.torproject.org/torproject.org utopic main' --yes
 
-#adding missing keys for repositories
-sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 94558F59 --yes
-gpg --keyserver keys.gnupg.net --recv 886DDD89
-gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
+	#adding missing keys for repositories
+	sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 94558F59 --yes
+	gpg --keyserver keys.gnupg.net --recv 886DDD89
+	gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
 
 #reading new repository list again
 sudo apt-get update 
-
-#INSTALLATION AND UPDATE
-echo
-echo ___________________________________________________
-echo
-echo INSTALLATION AND UPDATE
-echo ___________________________________________________
-echo
 
 #installing standard packages or check 
 sudo apt-get install dpkg --yes
@@ -134,13 +118,3 @@ sudo add-apt-repository --remove ppa:webupd8team/tor-browser --yes
 clear
 sudo apt-get upgrade --yes
 clear
-
-echo
-echo ___________________________________________________
-echo
-echo SYSTEM AND REPOSITORIES SUCCESSFULLY UPDATED
-echo ___________________________________________________
-echo
-echo
-
-
