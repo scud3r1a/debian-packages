@@ -1,6 +1,3 @@
-#reading repository list
-sudo apt-get update
-
 #adding some required repositories
 sudo add-apt-repository main
 sudo add-apt-repository universe
@@ -39,24 +36,13 @@ sudo apt-get install p7zip --yes
 sudo apt-get install ubuntu-restricted-extras --yes
 sudo apt-get install unity-tweak-tool --yes
 
-	#python and pip plus upgrade
+	#python and pip, upgrade
 	sudo apt-get install python-dev --yes
 	sudo apt-get install python-pip --yes
 	sudo pip install --upgrade pip
 	sudo pip install --upgrade virtualenv
 
-	#git with graphical user interfaces
-	sudo apt-get install git --yes
-	sudo apt-get install gitk --yes
-	sudo apt-get install git-gui --yes
-	
-	#tor with several tools
-	sudo apt-get install tor deb.torproject.org-keyring --yes
-	sudo apt-get install tor-arm --yes
-	sudo apt-get install python-stem --yes
-	sudo apt-get install vidalia --yes
-	
-	#network - ftp, ssh, vpn
+	#network and connecting
 	sudo apt-get install putty --yes
 	sudo apt-get install filezilla --yes
 	sudo apt-get install openvpn --yes
@@ -65,11 +51,14 @@ sudo apt-get install unity-tweak-tool --yes
 	sudo apt-get install synaptic --yes
 	sudo apt-get install samba --yes
 		sudo apt-get install samba-common-bin --yes
+	sudo apt-get install privoxy
+	
+		#tor with several tools
+		sudo apt-get install tor deb.torproject.org-keyring --yes
+		sudo apt-get install tor-arm --yes
+		sudo apt-get install python-stem --yes
+		sudo apt-get install vidalia --yes
 		
-	#android tools
-	sudo apt-get install android-tools-adb --yes
-	sudo apt-get install android-tools-fastboot --yes
-
 #entertainment and media		
 sudo apt-get install spotify-client --yes
 sudo apt-get install vlc --yes
@@ -100,6 +89,15 @@ sudo apt-get install avogadro --yes
 sudo apt-get install logisim --yes
 sudo apt-get install fritzing --yes
 
+	#git with graphical user interfaces
+	sudo apt-get install git --yes
+	sudo apt-get install gitk --yes
+	sudo apt-get install git-gui --yes
+	
+	#android tools
+	sudo apt-get install android-tools-adb --yes
+	sudo apt-get install android-tools-fastboot --yes
+	
 #internet and mail
 sudo apt-get install thunderbird --yes
 	sudo apt-get install kleopatra --yes
@@ -113,8 +111,9 @@ sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
 sudo apt-get install virtualbox linux-headers-$(uname -r) --yes
 
-#UGRADE
+#upgrade
 sudo add-apt-repository --remove ppa:webupd8team/tor-browser --yes
 clear
 sudo apt-get upgrade --yes
 clear
+echo InstallStart finished
