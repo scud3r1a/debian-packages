@@ -35,6 +35,7 @@ sudo apt-get install p7zip --yes
 	sudo apt-get install p7zip-rar --yes
 sudo apt-get install ubuntu-restricted-extras --yes
 sudo apt-get install unity-tweak-tool --yes
+sudo apt-get install golang --yes
 
 	#python and pip, upgrade
 	sudo apt-get install python-dev --yes
