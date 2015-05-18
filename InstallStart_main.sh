@@ -103,6 +103,10 @@ sudo apt-get install thunderbird --yes
 	sudo apt-get install kleopatra --yes
 sudo apt-get install firefox --yes
 	sudo apt-get install firefox-trunk --yes
+sudo apt-get install chromium-browser --yes
+	sudo apt-get install chromium-browser-l10n --yes
+	sudo apt-get install chromium-codecs-ffmpeg --yes
+	sudo apt-get install chromium-codecs-ffmpeg-extra --yes
 
 #others
 sudo apt-get install keepass2 --yes
@@ -116,4 +120,6 @@ sudo add-apt-repository --remove ppa:webupd8team/tor-browser --yes
 clear
 sudo apt-get upgrade --yes
 clear
+echo
 echo InstallStart finished
+echo 
