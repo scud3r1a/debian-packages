@@ -52,6 +52,7 @@ sudo apt-get install golang --yes
 	sudo apt-get install samba --yes
 		sudo apt-get install samba-common-bin --yes
 	sudo apt-get install privoxy
+	sudo apt-get install vuze
 	
 		#tor with several tools
 		sudo apt-get install tor deb.torproject.org-keyring --yes

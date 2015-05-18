@@ -10,6 +10,7 @@ The script is very self-explaining.
 Feel free to add your own favourite lines respectively programs for Debian/Ubuntu.
 
 For the best experience, please use an distribution version comparable to Ubuntu 14.04 or greater.
+Besides, please run the main script after the first script.
 
 Thanks, 
 
