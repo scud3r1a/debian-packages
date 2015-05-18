@@ -27,7 +27,6 @@ sudo apt-get install dpkg --yes
 sudo apt-get install build-essential --yes
 sudo apt-get install ntfs-3g --yes
 sudo apt-get install aptitude --yes
-sudo apt-get install nautilus-open-terminal --yes
 sudo apt-get install preload --yes
 sudo apt-get install gparted --yes
 sudo apt-get install p7zip --yes
