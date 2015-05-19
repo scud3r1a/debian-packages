@@ -10,7 +10,15 @@ The script is very self-explaining.
 Feel free to add your own favourite lines respectively programs for Debian/Ubuntu.
 
 For the best experience, please use an distribution version comparable to Ubuntu 14.04 or greater.
-Besides, please run the main script after the first script.
+To get fast access to all your favourite applications after the OS installation, 
+type the following lines in your terminal:
+
+sudo apt-get install git --yes
+git clone "https://github.com/gitoidevelopment/InstallStart"
+cd InstallStart/
+sudo sh InstallStart.sh --yes
+
+This code places the InstallStart script right on your disk and executes it subsequently.)
 
 Thanks, 
 
