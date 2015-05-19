@@ -3,6 +3,7 @@ sudo add-apt-repository main
 sudo add-apt-repository universe
 sudo add-apt-repository multiverse
 sudo add-apt-repository restricted
+sudo add-apt-repository ppa:webupd8team/tor-browser --yes
 sudo add-apt-repository ppa:ehbello/fritzing --yes
 sudo add-apt-repository ppa:git-core/ppa --yes
 sudo add-apt-repository ppa:sunab/sigil-git --yes
@@ -60,6 +61,7 @@ sudo apt-get install gufw --yes
 		sudo apt-get install tor-arm --yes
 		sudo apt-get install python-stem --yes
 		sudo apt-get install vidalia --yes
+		sudo apt-get install tor-browser
 		
 #entertainment and media		
 sudo apt-get install spotify-client --yes
