@@ -35,6 +35,7 @@ sudo apt-get install p7zip --yes
 sudo apt-get install ubuntu-restricted-extras --yes
 sudo apt-get install unity-tweak-tool --yes
 sudo apt-get install golang --yes
+sudo apt-get install gufw --yes
 
 	#python and pip, upgrade
 	sudo apt-get install python-dev --yes
@@ -63,6 +64,7 @@ sudo apt-get install golang --yes
 #entertainment and media		
 sudo apt-get install spotify-client --yes
 sudo apt-get install vlc --yes
+sudo apt-get install shutter --yes
 
 	#content creation (media)
 	sudo apt-get install audacity --yes
