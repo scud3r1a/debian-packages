@@ -15,7 +15,7 @@ type the following lines in your terminal:
 
 
 ####sudo apt-get install git --yes
-####git clone "https://github.com/gitoidevelopment/InstallStart"
+####sudo git clone "https://github.com/gitoidevelopment/InstallStart"
 ####cd InstallStart/
 ####sudo sh InstallStart.sh --yes
 
