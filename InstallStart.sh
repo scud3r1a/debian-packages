@@ -1,4 +1,10 @@
-#adding some required repositories
+echo 
+echo InstallStart starting
+echo
+echo
+echo
+cd
+#adding required repositories
 sudo add-apt-repository main
 sudo add-apt-repository universe
 sudo add-apt-repository multiverse
@@ -93,6 +99,7 @@ sudo apt-get install gelemental --yes
 sudo apt-get install avogadro --yes
 sudo apt-get install logisim --yes
 sudo apt-get install fritzing --yes
+sudo apt-get install spyder --yes
 
 	#git with graphical user interfaces
 	sudo apt-get install git --yes
@@ -124,7 +131,6 @@ sudo apt-get install virtualbox linux-headers-$(uname -r) --yes
 sudo add-apt-repository --remove ppa:webupd8team/tor-browser --yes
 clear
 sudo apt-get upgrade --yes
-cd
 clear
 echo
 echo InstallStart finished
