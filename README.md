@@ -13,10 +13,12 @@ For the best experience, please use an distribution version comparable to Ubuntu
 To get fast access to all your favourite applications after the OS installation, 
 type the following lines in your terminal:
 
+
 ####sudo apt-get install git --yes
 ####git clone "https://github.com/gitoidevelopment/InstallStart"
 ####cd InstallStart/
 ####sudo sh InstallStart.sh --yes
+
 
 This code places the InstallStart script right on your disk and executes it subsequently.)
 
