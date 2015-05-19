@@ -21,6 +21,7 @@ type the following lines in your terminal:
 
 
 This code places the InstallStart script right on your disk and executes it subsequently.
+You can as well use runfirst.sh for the installation.
 
 Thanks, 
 
