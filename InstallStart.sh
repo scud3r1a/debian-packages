@@ -120,6 +120,7 @@ sudo apt-get install virtualbox linux-headers-$(uname -r) --yes
 sudo add-apt-repository --remove ppa:webupd8team/tor-browser --yes
 clear
 sudo apt-get upgrade --yes
+cd
 clear
 echo
 echo InstallStart finished
