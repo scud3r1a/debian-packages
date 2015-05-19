@@ -20,7 +20,7 @@ type the following lines in your terminal:
 ####sudo sh InstallStart.sh --yes
 
 
-This code places the InstallStart script right on your disk and executes it subsequently.)
+This code places the InstallStart script right on your disk and executes it subsequently.
 
 Thanks, 
 
