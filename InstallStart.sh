@@ -1,8 +1,6 @@
 echo 
 echo InstallStart starting
 echo
-echo
-echo
 cd
 #adding required repositories
 sudo add-apt-repository main
@@ -21,14 +19,17 @@ sudo add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --y
 sudo add-apt-repository 'deb http://deb.torproject.org/torproject.org utopic main' --yes
 sudo add-apt-repository 'deb-src http://deb.torproject.org/torproject.org utopic main' --yes
 
+	echo
 	#adding missing keys for repositories
 	sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 94558F59 --yes
 	gpg --keyserver keys.gnupg.net --recv 886DDD89
 	gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
 
+echo
 #reading new repository list again
 sudo apt-get update 
 
+echo
 #installing standard packages or check 
 sudo apt-get install dpkg --yes
 sudo apt-get install build-essential --yes
@@ -128,6 +129,7 @@ sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
 sudo apt-get install virtualbox linux-headers-$(uname -r) --yes
 
+echo
 #upgrade
 sudo add-apt-repository --remove ppa:webupd8team/tor-browser --yes
 clear
