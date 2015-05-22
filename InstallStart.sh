@@ -102,6 +102,8 @@ sudo apt-get install avogadro --yes
 sudo apt-get install logisim --yes
 sudo apt-get install fritzing --yes
 sudo apt-get install spyder --yes
+sudo apt-get install gedit --yes
+sudo apt-get install vim --yes
 
 	#git with graphical user interfaces
 	sudo apt-get install git --yes
