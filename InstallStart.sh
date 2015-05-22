@@ -15,6 +15,7 @@ sudo add-apt-repository ppa:tualatrix/ppa --yes
 sudo apt-add-repository ppa:jtaylor/keepass --yes
 sudo add-apt-repository ppa:paolorotolo/android-studio --yes
 sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa --yes
+sudo add-apt-repository ppa:micahflee/ppa --yes
 sudo add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --yes
 sudo add-apt-repository 'deb http://deb.torproject.org/torproject.org utopic main' --yes
 sudo add-apt-repository 'deb-src http://deb.torproject.org/torproject.org utopic main' --yes
@@ -86,8 +87,8 @@ sudo apt-get install ubuntu-restricted-extras --yes
 	sudo apt-get install synaptic --yes
 	sudo apt-get install samba --yes
 		sudo apt-get install samba-common-bin --yes
-	sudo apt-get install privoxy
-	sudo apt-get install vuze
+	sudo apt-get install privoxy --yes
+	sudo apt-get install vuze --yes
 	sudo apt-get install gufw --yes
 	
 		#tor with several tools
@@ -95,7 +96,8 @@ sudo apt-get install ubuntu-restricted-extras --yes
 		sudo apt-get install tor-arm --yes
 		sudo apt-get install python-stem --yes
 		sudo apt-get install vidalia --yes
-		sudo apt-get install tor-browser
+		sudo apt-get install tor-browser --yes
+		sudo apt-get install onionshare --yes
 		
 #entertainment and media		
 sudo apt-get install spotify-client --yes
