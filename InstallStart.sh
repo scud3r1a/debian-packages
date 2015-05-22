@@ -37,14 +37,39 @@ sudo apt-get install ntfs-3g --yes
 sudo apt-get install gksu --yes
 sudo apt-get install aptitude --yes
 sudo apt-get install preload --yes
-sudo apt-get install gparted --yes
-sudo apt-get install p7zip --yes
-	sudo apt-get install p7zip-full --yes
-	sudo apt-get install p7zip-rar --yes
 sudo apt-get install ubuntu-restricted-extras --yes
-sudo apt-get install unity-tweak-tool --yes
-sudo apt-get install golang --yes
-sudo apt-get install gufw --yes
+	sudo apt-get install unity-tweak-tool --yes
+	sudo apt-get install gparted --yes
+	sudo apt-get install p7zip --yes
+		sudo apt-get install p7zip-full --yes
+		sudo apt-get install p7zip-rar --yes
+	sudo apt-get install makeself --yes
+	sudo aptitude install libfuse-dev --yes
+
+	sudo apt-get install golang --yes
+	sudo apt-get install ruby --yes
+		sudo apt-get install libruby --yes  
+		sudo apt-get install libgtk2-ruby --yes
+		sudo apt-get install libglade2-ruby --yes
+		sudo apt-get install libopenssl-ruby --yes
+	sudo apt-get install haskell-platform --yes
+		sudo apt-get install ghc --yes
+	sudo apt-get install groovy --yes
+	sudo apt-get install mawk --yes
+	sudo apt-get install openjdk-7-jre --yes
+		sudo apt-get install icedtea-7-plugin --yes
+		sudo apt-get install openjdk-7-jdk --yes 
+		sudo apt-get install openjdk-7-source --yes
+		sudo apt-get install openjdk-7-demo --yes
+		sudo apt-get install openjdk-7-doc --yes
+		sudo apt-get install openjdk-7-jre-headless --yes
+		sudo apt-get install openjdk-7-jre-lib --yes
+		sudo apt-get install gcj-jre --yes   
+	sudo apt-get install lua5.2 --yes
+		sudo apt-get install lua5.2-doc --yes
+	sudo apt-get install fp-compiler --yes
+		sudo apt-get install fp-ide --yes
+	sudo apt-get install perl --yes
 
 	#python and pip, upgrade
 	sudo apt-get install python-dev --yes
@@ -63,6 +88,7 @@ sudo apt-get install gufw --yes
 		sudo apt-get install samba-common-bin --yes
 	sudo apt-get install privoxy
 	sudo apt-get install vuze
+	sudo apt-get install gufw --yes
 	
 		#tor with several tools
 		sudo apt-get install tor deb.torproject.org-keyring --yes
