@@ -16,6 +16,7 @@ sudo apt-add-repository ppa:jtaylor/keepass --yes
 sudo add-apt-repository ppa:paolorotolo/android-studio --yes
 sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa --yes
 sudo add-apt-repository ppa:micahflee/ppa --yes
+sudo add-apt-repository ppa:klaus-vormweg/bluefish --yes
 sudo add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --yes
 sudo add-apt-repository 'deb http://deb.torproject.org/torproject.org utopic main' --yes
 sudo add-apt-repository 'deb-src http://deb.torproject.org/torproject.org utopic main' --yes
@@ -71,6 +72,12 @@ sudo apt-get install ubuntu-restricted-extras --yes
 	sudo apt-get install fp-compiler --yes
 		sudo apt-get install fp-ide --yes
 	sudo apt-get install perl --yes
+	sudo apt-get install qt5-default --yes
+		sudo apt-get install qt4-default --yes
+		sudo apt-get install qt4-dev-tools --yes
+		sudo apt-get install qttools5-dev-tools --yes
+		sudo apt-get install qt5-doc --yes
+		sudo apt-get install qt4-doc --yes
 
 	#python and pip, upgrade
 	sudo apt-get install python-dev --yes
@@ -132,6 +139,14 @@ sudo apt-get install fritzing --yes
 sudo apt-get install spyder --yes
 sudo apt-get install gedit --yes
 sudo apt-get install vim --yes
+sudo apt-get install bluefish --yes
+sudo apt-get install anjuta --yes
+sudo apt-get install gambas2 --yes
+sudo apt-get install emacs --yes
+sudo apt-get install idle --yes
+sudo apt-get install lazarus --yes
+sudo apt-get install gtcreator --yes
+sudo apt-get install geany --yes
 
 	#git with graphical user interfaces
 	sudo apt-get install git --yes
