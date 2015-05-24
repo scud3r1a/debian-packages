@@ -17,9 +17,13 @@ sudo add-apt-repository ppa:paolorotolo/android-studio --yes
 sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa --yes
 sudo add-apt-repository ppa:micahflee/ppa --yes
 sudo add-apt-repository ppa:klaus-vormweg/bluefish --yes
+
 sudo add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --yes
 sudo add-apt-repository 'deb http://deb.torproject.org/torproject.org utopic main' --yes
 sudo add-apt-repository 'deb-src http://deb.torproject.org/torproject.org utopic main' --yes
+
+wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -
+	sudo wget "http://deb.playonlinux.com/playonlinux_$(lsb_release -cs).list" -O /etc/apt/sources.list.d/playonlinux.list 
 
 	echo
 	#adding missing keys for repositories
@@ -173,6 +177,8 @@ sudo apt-get install keepassx --yes
 sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
 sudo apt-get install virtualbox linux-headers-$(uname -r) --yes
+sudo apt-get install wine --yes
+	sudo apt-get install playonlinux --yes
 
 echo
 #upgrade
