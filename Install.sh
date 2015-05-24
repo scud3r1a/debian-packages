@@ -39,6 +39,8 @@ sudo apt-get install ntfs-3g --yes
 sudo apt-get install gksu --yes
 sudo apt-get install aptitude --yes
 sudo apt-get install preload --yes
+sudo apt-get install wget --yes
+sudo apt-get install bmap-tools --yes
 sudo apt-get install ubuntu-restricted-extras --yes
 	sudo apt-get install unity-tweak-tool --yes
 	sudo apt-get install gparted --yes
