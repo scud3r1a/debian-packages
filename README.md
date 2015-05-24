@@ -21,7 +21,8 @@ type the following lines in your terminal:
 
 
 This code places the InstallStart script right on your disk and executes it subsequently.
-You can as well use runfirst.sh in your home directory for the installation.
+Alternatively, you can use runfirst.sh in your home directory for download and installation
+as a git repository.
 
 Thanks, 
 
