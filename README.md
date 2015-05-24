@@ -17,7 +17,7 @@ type the following lines in your terminal:
 ####sudo apt-get install git --yes
 ####sudo git clone "https://github.com/gitoidevelopment/InstallStart"
 ####cd InstallStart/
-####sudo sh InstallStart.sh --yes
+####sudo sh Install.sh --yes
 
 
 This code places the InstallStart script right on your disk and executes it subsequently.
