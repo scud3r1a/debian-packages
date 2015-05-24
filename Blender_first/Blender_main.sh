@@ -4,7 +4,7 @@ sudo rm "blender-2.74-linux-glibc211-x86_64.tar.bz2"
 mv "blender-2.74-linux-glibc211-x86_64" "blender"
 sudo mkdir /opt/blender
 sudo cp -r blender/* /opt/blender/
-sudo cp "InstallStart/blender/blender.desktop" "/usr/share/applications/"
+sudo cp "InstallStart/Blender_first/blender.desktop" "/usr/share/applications/"
 echo
 InstallStart finished (Blender installation)
 echo
