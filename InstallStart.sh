@@ -20,8 +20,8 @@ sudo add-apt-repository ppa:klaus-vormweg/bluefish --yes
 sudo add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --yes
 sudo add-apt-repository 'deb http://deb.torproject.org/torproject.org utopic main' --yes
 sudo add-apt-repository 'deb-src http://deb.torproject.org/torproject.org utopic main' --yes
+echo
 
-	echo
 	#adding missing keys for repositories
 	sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 94558F59 --yes
 	gpg --keyserver keys.gnupg.net --recv 886DDD89
@@ -84,8 +84,8 @@ sudo apt-get install ubuntu-restricted-extras --yes
 	#python and pip, upgrade
 	sudo apt-get install python-dev --yes
 	sudo apt-get install python-pip --yes
-	sudo pip install --upgrade pip
-	sudo pip install --upgrade virtualenv
+		sudo pip install --upgrade pip
+		sudo pip install --upgrade virtualenv
 
 	#network and connecting
 	sudo apt-get install putty --yes
@@ -102,11 +102,11 @@ sudo apt-get install ubuntu-restricted-extras --yes
 	
 		#tor with several tools
 		sudo apt-get install tor deb.torproject.org-keyring --yes
-		sudo apt-get install tor-arm --yes
-		sudo apt-get install python-stem --yes
-		sudo apt-get install vidalia --yes
+			sudo apt-get install tor-arm --yes
+			sudo apt-get install python-stem --yes
+			sudo apt-get install vidalia --yes
+			sudo apt-get install onionshare --yes
 		sudo apt-get install tor-browser --yes
-		sudo apt-get install onionshare --yes
 		
 #entertainment and media		
 sudo apt-get install spotify-client --yes
@@ -152,8 +152,8 @@ sudo apt-get install geany --yes
 
 	#git with graphical user interfaces
 	sudo apt-get install git --yes
-	sudo apt-get install gitk --yes
-	sudo apt-get install git-gui --yes
+		sudo apt-get install gitk --yes
+		sudo apt-get install git-gui --yes
 	
 	#android tools
 	sudo apt-get install android-tools-adb --yes
