@@ -116,6 +116,7 @@ sudo apt-get install shutter --yes
 	#content creation (media)
 	sudo apt-get install audacity --yes
 	sudo apt-get install libreoffice --yes
+	sudo apt-get install dia --yes
 	sudo apt-get install openshot --yes
 	sudo apt-get install gimp --yes
 	sudo apt-get install inkscape --yes
