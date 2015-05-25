@@ -1,4 +1,4 @@
-# InstallStart
+#InstallStart
 ##The most important script for a new Ubuntu installation
 ####(Only woking with Ubuntu or Debian-like distributions)
 
