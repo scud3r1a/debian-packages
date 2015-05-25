@@ -1,4 +1,4 @@
-#Simple Server
+#SimpleServer
 ##The most important script for a Raspberry Pi server
 ####(Only woking with Raspbian or Ubuntu for ARM)
 
