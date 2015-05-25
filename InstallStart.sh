@@ -184,5 +184,6 @@ echo
 sudo add-apt-repository --remove ppa:webupd8team/tor-browser --yes
 clear
 sudo apt-get upgrade --yes
+cd
 clear
-sudo sh "Blender_first/Blender_main.sh"
+sudo sh "InstallStart/Blender/InstallStart_Blender.sh"

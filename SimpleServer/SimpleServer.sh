@@ -140,24 +140,8 @@ cd
 	smbpasswd -a nas
 	echo
 	clear
+	cd
 
-	#Seafile server (LAN)
-	mkdir seafile
-	wget http://seafile.googlecode.com/files/seafile-server_1.8.5_pi.tar.gz
-	tar -xvf seafile-server_1.8.5_pi.tar.gz
-	cd seafile-server-1.8.5
-	
-	./setup-seafile.sh
-	./seafile.sh start
-	./seahub.sh start
-	
-	crontab -e
-		#! add the following lines:
-		 #! @reboot /home/seafile/seafile/seafile-server-1.8.5/seafile.sh start
-		 #! @reboot /home/seafile/seafile/seafile-server-1.8.5/seahub.sh start
-	echo
-	clear
-	
 	#Tor proxy (LAN)
 	sudo nano /etc/privoxy/config
 		#! add the following lines in the eponymous area:
@@ -179,6 +163,7 @@ cd
 	sudo service privoxy restart
 	echo
 	clear
+	cd
 	
 	#download server (JDownloader)
 	mkdir jdownloader
@@ -187,12 +172,13 @@ cd
 	cd
 	echo
 	clear
+	cd
 	
 	#shortcuts
-	cd shortcuts/
+	cd /InstallStart/shortcuts/
 		cp "JDownloader.sh" "/home/pi/"
 		cp "Tor-Proxy.sh" "/home/pi/"
-		cp "Start.sh" "/home/pi/"
+		cp "Restart.sh" "/home/pi/"
 	cd
 	
 clear

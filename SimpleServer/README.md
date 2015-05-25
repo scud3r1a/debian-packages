@@ -1,6 +1,6 @@
 #SimpleServer
 ##The most important script for a Raspberry Pi server
-####(Only woking with Raspbian or Ubuntu for ARM)
+####(Only woking with Raspbian or Ubuntu for ARM as well as Raspbian like distributions)
 
 This is a fork of the InstallStart project (which install important normal-user applications and packages
 for your Debian or Ubuntu based Linux OS (like Linux Mint or Ubuntu itself) and also some developer and security packages).
@@ -28,11 +28,6 @@ Furthermore, the instructions for the right settings are listed here:
 		 #! directory mask = 0771
 		 #! read only = no
 	
-		crontab -e
-		#! add the following lines:
-		 #! @reboot /home/seafile/seafile/seafile-server-1.8.5/seafile.sh start
-		 #! @reboot /home/seafile/seafile/seafile-server-1.8.5/seahub.sh start
-		
 	#Tor proxy (LAN)
 		sudo nano /etc/privoxy/config
 		#! add the following lines in the eponymous area:
@@ -48,6 +43,7 @@ Furthermore, the instructions for the right settings are listed here:
 To update your system without repeating the whole setting, you can as well run the "SimpleServer_Update" script.
 
 For the best experience with the Samba file server, please mount an USB drive permanently and use it for Samba.
+Furthermore, be sure that you made the folder ("/media/"your device"/share") readable and usable for normal users by using "chmod +x share" or the like.
 
 Thanks, 
 
