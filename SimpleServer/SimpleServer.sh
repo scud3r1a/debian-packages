@@ -24,7 +24,7 @@ echo
 			sudo apt-get install p7zip-full --yes
 			sudo apt-get install p7zip-rar --yes
 		sudo apt-get install makeself --yes
-		sudo aptitude install libfuse-dev --yes
+		sudo apt-get install libfuse-dev --yes
 	
 		sudo apt-get install golang --yes
 		sudo apt-get install ruby --yes
@@ -175,7 +175,7 @@ cd
 	cd
 	
 	#shortcuts
-	cd /InstallStart/shortcuts/
+	cd InstallStart/SimpleServer/shortcuts/
 		cp "JDownloader.sh" "/home/pi/"
 		cp "Tor-Proxy.sh" "/home/pi/"
 		cp "Restart.sh" "/home/pi/"

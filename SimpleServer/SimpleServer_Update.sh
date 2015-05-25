@@ -22,7 +22,7 @@ echo
 			sudo apt-get install p7zip-full --yes
 			sudo apt-get install p7zip-rar --yes
 		sudo apt-get install makeself --yes
-		sudo aptitude install libfuse-dev --yes
+		sudo apt-get install libfuse-dev --yes
 	
 		sudo apt-get install golang --yes
 		sudo apt-get install ruby --yes
@@ -82,7 +82,7 @@ echo
 		sudo apt-get install gufw --yes
 		
 		#tor with several tools
-		sudo apt-get install tor deb.torproject.org-keyring --yes
+		sudo apt-get install tor 
 			sudo apt-get install tor-arm --yes
 			sudo apt-get install python-stem --yes
 			sudo apt-get install vidalia --yes

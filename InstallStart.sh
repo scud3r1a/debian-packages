@@ -101,7 +101,7 @@ sudo apt-get install ubuntu-restricted-extras --yes
 	sudo apt-get install gufw --yes
 	
 		#tor with several tools
-		sudo apt-get install tor deb.torproject.org-keyring --yes
+		sudo apt-get install tor --yes
 			sudo apt-get install tor-arm --yes
 			sudo apt-get install python-stem --yes
 			sudo apt-get install vidalia --yes

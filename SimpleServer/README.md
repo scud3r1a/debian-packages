@@ -10,7 +10,12 @@ In contrast to the InstallStart script, the focus is not on an "allround system"
 
 To install the scripts content, run it in your terminal:
 
-####sudo sh SimpleServer.sh --yes
+		#! cd
+		#! sudo apt-get install git --yes
+		
+		#! sudo git clone "https://github.com/gitoidevelopment/InstallStart"
+		#! cd InstallStart/SimpleServer/
+		#! sudo sh SimpleServer.sh --yes
 
 After you have installed the content, the setting of the applications will begin instantly.
 Please complete that by editing the required scripts like the notes in the script are pretending.
