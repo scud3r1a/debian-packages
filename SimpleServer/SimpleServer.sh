@@ -190,7 +190,9 @@ cd
 	
 	#shortcuts
 	cd shortcuts/
-	
+		cp "JDownloader.sh" "/home/pi/"
+		cp "Tor-Proxy.sh" "/home/pi/"
+		cp "Start.sh" "/home/pi/"
 	cd
 	
 clear
