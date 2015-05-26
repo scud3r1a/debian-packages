@@ -186,5 +186,3 @@ clear
 sudo apt-get upgrade --yes
 cd
 clear
-sudo cp "InstallStart/InstallStart-Update.sh" "/home/pi/"
-sudo sh "InstallStart/Blender/InstallStart_Blender.sh"
