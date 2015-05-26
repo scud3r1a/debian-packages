@@ -115,5 +115,5 @@ sudo apt-get upgrade --yes
 	
 clear
 echo 
-echo SimpleServer (installation/update) finished
+echo "SimpleServer (installation/update) finished"
 echo
