@@ -52,6 +52,12 @@ The SimpleServer main script will place them in your Pi's home directory during 
 For the best experience with the Samba file server, please mount an USB drive permanently and use it for Samba.
 Furthermore, be sure that you made the folder ("/media/"your device"/share") readable and usable for normal users by using "chmod +x share" or the like.
 
+The named and included projects like the Samba server or the Tor proxy are just two possible purposes.
+With the included software, your Raspberry Pi with SimpleServer is able to do much more.
+Preferably, you should install Raspbian over NOOB for your Raspberry Pi to get most convenience.
+
+With all these projects combined, you can use your Pi as well as a Onion Router via Tor or the best SSH remote access calculator via Wolfram Mathematica (pre-installed) or Octave, to name only some ideas.
+
 Thanks, 
 
 ####Kutsubato @ gitoidevelopment
