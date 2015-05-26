@@ -14,7 +14,7 @@ To install the scripts content, run it in your terminal:
 		#! sudo apt-get install git --yes
 		
 		#! sudo git clone "https://github.com/gitoidevelopment/InstallStart"
-		#! cd InstallStart/SimpleServer/
+		#! cd InstallStart/SimpleServer
 		#! sudo sh SimpleServer.sh --yes
 
 After you have installed the content, the setting of the applications will begin instantly.
@@ -45,7 +45,9 @@ Furthermore, the instructions for the right settings are listed here:
 		 #! no-digest
 		 #! never_direct allow all
 		 
-To update your system without repeating the whole setting, you can as well run the "SimpleServer_Update" script.
+To update your system without repeating the whole setting, you can as well run the "SimpleServer-Update" script.
+You can find this scipt in the shortcuts folder with other handy quick start scripts.
+The SimpleServer main script will place them in your Pi's home directory during the installation.
 
 For the best experience with the Samba file server, please mount an USB drive permanently and use it for Samba.
 Furthermore, be sure that you made the folder ("/media/"your device"/share") readable and usable for normal users by using "chmod +x share" or the like.
