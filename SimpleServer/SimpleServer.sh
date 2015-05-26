@@ -179,6 +179,8 @@ cd
 		cp "JDownloader.sh" "/home/pi/"
 		cp "Tor-Proxy.sh" "/home/pi/"
 		cp "Restart.sh" "/home/pi/"
+		
+		cp "SimpleServer-Update" "/home/pi/"
 	cd
 	
 clear
