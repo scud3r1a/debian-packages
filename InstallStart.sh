@@ -126,6 +126,8 @@ sudo apt-get install shutter --yes
 	sudo apt-get install calibre --yes
 	sudo apt-get install sigil --yes
 	sudo apt-get install lyx --yes
+	sudo apt-get install pdfchain --yes
+		sudo apt-get install pdftk --yes
 
 #development, science and calculation (production)
 sudo apt-get install android-studio --yes
