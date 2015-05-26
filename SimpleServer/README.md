@@ -6,7 +6,7 @@ This is a fork of the InstallStart project (which install important normal-user 
 for your Debian or Ubuntu based Linux OS (like Linux Mint or Ubuntu itself) and also some developer and security packages).
 
 This project, SimpleServer, install some of these applications on the Raspberry Pi by executing the script.
-In contrast to the InstallStart script, the focus is not on an "allround system" but on a simple normal-user server for the home network.
+In contrast to the InstallStart script, the focus is not on an "allround system" but on a simple normal-user server for the own home network.
 
 To install the scripts content, run it in your terminal:
 
