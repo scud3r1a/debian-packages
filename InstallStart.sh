@@ -7,6 +7,7 @@ sudo add-apt-repository main
 sudo add-apt-repository universe
 sudo add-apt-repository multiverse
 sudo add-apt-repository restricted
+echo
 sudo add-apt-repository ppa:webupd8team/tor-browser --yes
 sudo add-apt-repository ppa:ehbello/fritzing --yes
 sudo add-apt-repository ppa:git-core/ppa --yes
@@ -15,6 +16,7 @@ sudo add-apt-repository ppa:tualatrix/ppa --yes
 sudo apt-add-repository ppa:jtaylor/keepass --yes
 sudo add-apt-repository ppa:paolorotolo/android-studio --yes
 sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa --yes
+sudo add-apt-repository ppa:pipelight/stable --yes
 sudo add-apt-repository ppa:micahflee/ppa --yes
 sudo add-apt-repository ppa:klaus-vormweg/bluefish --yes
 sudo add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --yes
@@ -49,6 +51,13 @@ sudo apt-get install ubuntu-restricted-extras --yes
 		sudo apt-get install p7zip-rar --yes
 	sudo apt-get install makeself --yes
 	sudo aptitude install libfuse-dev --yes
+
+sudo apt-get install wine --yes
+	sudo apt-get install playonlinux --yes
+	sudo apt-get install --install-recommends pipelight-multi --yes
+		sudo pipelight-plugin --update
+		#! agree the license
+		sudo pipelight-plugin --enable silverlight 
 
 	sudo apt-get install golang --yes
 	sudo apt-get install ruby --yes
@@ -178,8 +187,6 @@ sudo apt-get install keepassx --yes
 sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
 sudo apt-get install virtualbox linux-headers-$(uname -r) --yes
-sudo apt-get install wine --yes
-	sudo apt-get install playonlinux --yes
 
 echo
 #upgrade
