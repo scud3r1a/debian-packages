@@ -13,7 +13,6 @@ sudo add-apt-repository ppa:ehbello/fritzing --yes
 sudo add-apt-repository ppa:git-core/ppa --yes
 sudo add-apt-repository ppa:sunab/sigil-git --yes
 sudo add-apt-repository ppa:tualatrix/ppa --yes
-sudo apt-add-repository ppa:jtaylor/keepass --yes
 sudo add-apt-repository ppa:paolorotolo/android-studio --yes
 sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa --yes
 sudo add-apt-repository ppa:pipelight/stable --yes
@@ -182,7 +181,6 @@ sudo apt-get install chromium-browser --yes
 	sudo apt-get install chromium-codecs-ffmpeg-extra --yes
 
 #others
-sudo apt-get install keepass2 --yes
 sudo apt-get install keepassx --yes
 sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
@@ -193,5 +191,5 @@ echo
 sudo add-apt-repository --remove ppa:webupd8team/tor-browser --yes
 clear
 sudo apt-get upgrade --yes
+echo
 cd
-clear
