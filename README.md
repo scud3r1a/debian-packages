@@ -27,5 +27,3 @@ When you have installed it once, you can copy the "InstallStart-Update.sh" in yo
 to update your InstallStart script and your system by executing the script
 
 ####Kutsubato @ gitoidevelopment
-
-###https://gitoidevelopment.github.io/InstallStart/
