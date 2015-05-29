@@ -191,5 +191,7 @@ echo
 sudo add-apt-repository --remove ppa:webupd8team/tor-browser --yes
 clear
 sudo apt-get upgrade --yes
-echo
 cd
+echo
+echo InstallStart finished
+echo
