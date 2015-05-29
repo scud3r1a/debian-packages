@@ -22,12 +22,9 @@ type the following lines in the terminal from your home directory:
 		#! cd InstallStart/
 		#! sudo sh InstallStart.sh --yes
 
-This code places the InstallStart script right on your disk and executes it afterwards.
-Alternatively, you can use "runfirst.sh" in your home directory for download and installation
-as a git repository.
-Do not use "runfirst.sh" if you want to install SimpleServer.
-
-Thanks, 
+This code places the InstallStart script right on your disk via Git.
+When you have installed it once, you can copy the "InstallStart-Update.sh" in your home directory 
+to update your InstallStart script and your system by executing the script
 
 ####Kutsubato @ gitoidevelopment
 
