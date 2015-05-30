@@ -55,7 +55,6 @@ sudo apt-get install wine --yes
 	sudo apt-get install playonlinux --yes
 	sudo apt-get install --install-recommends pipelight-multi --yes
 		sudo pipelight-plugin --update
-		#! agree the license
 		sudo pipelight-plugin --enable silverlight 
 
 	sudo apt-get install golang --yes
@@ -160,6 +159,13 @@ sudo apt-get install idle --yes
 sudo apt-get install lazarus --yes
 sudo apt-get install gtcreator --yes
 sudo apt-get install geany --yes
+echo
+sudo apt-get install virtualbox linux-headers-$(uname -r) --yes
+sudo apt-get install qemu --yes
+	sudo apt-get install qemu-kvm --yes
+		sudo apt-get install libvirt-bin --yes
+		sudo apt-get install virt-manager --yes
+		sudo apt-get install virt-viewer --yes
 
 	#git with graphical user interfaces
 	sudo apt-get install git --yes
@@ -184,7 +190,6 @@ sudo apt-get install chromium-browser --yes
 sudo apt-get install keepassx --yes
 sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
-sudo apt-get install virtualbox linux-headers-$(uname -r) --yes
 
 echo
 #upgrade
