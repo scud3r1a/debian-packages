@@ -158,6 +158,7 @@ sudo apt-get install emacs --yes
 sudo apt-get install idle --yes
 sudo apt-get install lazarus --yes
 sudo apt-get install gtcreator --yes
+sudo apt-get install gambas3 --yes
 sudo apt-get install geany --yes
 echo
 sudo apt-get install virtualbox linux-headers-$(uname -r) --yes
