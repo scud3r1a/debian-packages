@@ -186,6 +186,8 @@ sudo apt-get install chromium-browser --yes
 	sudo apt-get install chromium-browser-l10n --yes
 	sudo apt-get install chromium-codecs-ffmpeg --yes
 	sudo apt-get install chromium-codecs-ffmpeg-extra --yes
+sudo apt-get install claws-mail --yes
+	sudo apt-get install claws-mail-extra-plugins --yes
 
 #others
 sudo apt-get install keepassx --yes
