@@ -193,6 +193,7 @@ sudo apt-get install claws-mail --yes
 sudo apt-get install keepassx --yes
 sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
+sudo apt-get install archivemount --yes
 
 echo
 #upgrade
