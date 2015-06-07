@@ -16,6 +16,7 @@ sudo add-apt-repository ppa:tualatrix/ppa --yes
 sudo add-apt-repository ppa:paolorotolo/android-studio --yes
 sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa --yes
 sudo add-apt-repository ppa:pipelight/stable --yes
+sudo apt-add-repository ppa:ehoover/compholio --yes
 sudo add-apt-repository ppa:micahflee/ppa --yes
 sudo add-apt-repository ppa:klaus-vormweg/bluefish --yes
 sudo add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --yes
@@ -194,6 +195,7 @@ sudo apt-get install keepassx --yes
 sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
 sudo apt-get install archivemount --yes
+sudo apt-get install netflix-desktop
 
 echo
 #upgrade
