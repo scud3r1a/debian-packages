@@ -196,6 +196,8 @@ sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
 sudo apt-get install archivemount --yes
 sudo apt-get install netflix-desktop
+echo
+wget -qO- https://get.docker.com/ | sh
 
 echo
 #upgrade
