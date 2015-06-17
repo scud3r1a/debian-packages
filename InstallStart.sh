@@ -208,3 +208,6 @@ cd
 echo
 echo InstallStart finished
 echo
+cd
+cd InstallStart/Blender/
+sudo sh InstallStart-Blender.sh --yes

@@ -5,10 +5,13 @@ echo
 echo "Downloading Blender (64 bit)"
 echo
 
-wget "http://ftp.halifax.rwth-aachen.de/blender/release/Blender2.74/blender-2.74-linux-glibc211-x86_64.tar.bz2"
-sudo tar xvjf "blender-2.74-linux-glibc211-x86_64.tar.bz2"
-sudo rm "blender-2.74-linux-glibc211-x86_64.tar.bz2"
-mv "blender-2.74-linux-glibc211-x86_64" "blender"
+wget "download.blender.org/release/Blender2.75/blender-2.75-rc1-linux-glibc211-x86_64.tar.bz2"
+
+echo
+sudo mv "blender-2.75-rc1-linux-glibc211-x86_64.tar.bz2" "blender.tar.bz2"
+
+sudo tar xvjf "blender.tar.bz2"
+sudo rm "blender.tar.bz2"
 
 echo
 echo "Installing Blender"
