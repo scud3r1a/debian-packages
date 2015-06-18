@@ -46,6 +46,7 @@ sudo apt-get install bmap-tools --yes
 sudo apt-get install ubuntu-restricted-extras --yes
 	sudo apt-get install unity-tweak-tool --yes
 	sudo apt-get install gparted --yes
+	sudo apt-get install archivemount --yes
 	sudo apt-get install p7zip --yes
 		sudo apt-get install p7zip-full --yes
 		sudo apt-get install p7zip-rar --yes
@@ -153,7 +154,6 @@ sudo apt-get install spyder --yes
 sudo apt-get install gedit --yes
 sudo apt-get install vim --yes
 sudo apt-get install bluefish --yes
-sudo apt-get install anjuta --yes
 sudo apt-get install gambas2 --yes
 sudo apt-get install emacs --yes
 sudo apt-get install idle --yes
@@ -180,21 +180,17 @@ sudo apt-get install qemu --yes
 	
 #internet and mail
 sudo apt-get install thunderbird --yes
-	sudo apt-get install kleopatra --yes
 sudo apt-get install firefox --yes
 	sudo apt-get install firefox-trunk --yes
 sudo apt-get install chromium-browser --yes
 	sudo apt-get install chromium-browser-l10n --yes
 	sudo apt-get install chromium-codecs-ffmpeg --yes
 	sudo apt-get install chromium-codecs-ffmpeg-extra --yes
-sudo apt-get install claws-mail --yes
-	sudo apt-get install claws-mail-extra-plugins --yes
 
 #others
 sudo apt-get install keepassx --yes
 sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
-sudo apt-get install archivemount --yes
 sudo apt-get install netflix-desktop
 echo
 wget -qO- https://get.docker.com/ | sh
