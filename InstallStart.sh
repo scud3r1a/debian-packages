@@ -191,7 +191,7 @@ sudo apt-get install chromium-browser --yes
 sudo apt-get install keepassx --yes
 sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
-sudo apt-get install netflix-desktop
+sudo apt-get install netflix-desktop --yes
 echo
 wget -qO- https://get.docker.com/ | sh
 
