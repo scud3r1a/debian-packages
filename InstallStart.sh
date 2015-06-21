@@ -26,7 +26,7 @@ sudo add-apt-repository 'deb http://deb.torproject.org/torproject.org utopic mai
 sudo add-apt-repository 'deb-src http://deb.torproject.org/torproject.org utopic main' --yes
 echo
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/community/xUbuntu_14.10/ /' >> /etc/apt/sources.list.d/owncloud.list"
-
+	
 echo
 
 	#adding missing keys for repositories
@@ -198,7 +198,11 @@ sudo apt-get install keepassx --yes
 sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
 sudo apt-get install netflix-desktop --yes
-sudo apt-get install owncloud --yes
+echo
+	wget http://download.opensuse.org/repositories/isv:ownCloud:community/xUbuntu_14.10/Release.key
+	sudo apt-key add - < Release.key 
+	sudo apt-get update
+sudo apt-get install owncloud --force-yes --yes
 echo
 wget -qO- https://get.docker.com/ | sh
 
