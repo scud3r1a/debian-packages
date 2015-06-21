@@ -2,6 +2,7 @@ echo
 echo InstallStart starting
 echo
 cd
+
 #adding required repositories
 sudo add-apt-repository main
 sudo add-apt-repository universe
@@ -19,9 +20,13 @@ sudo add-apt-repository ppa:pipelight/stable --yes
 sudo apt-add-repository ppa:ehoover/compholio --yes
 sudo add-apt-repository ppa:micahflee/ppa --yes
 sudo add-apt-repository ppa:klaus-vormweg/bluefish --yes
+echo
 sudo add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --yes
 sudo add-apt-repository 'deb http://deb.torproject.org/torproject.org utopic main' --yes
 sudo add-apt-repository 'deb-src http://deb.torproject.org/torproject.org utopic main' --yes
+echo
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/community/xUbuntu_14.10/ /' >> /etc/apt/sources.list.d/owncloud.list"
+
 echo
 
 	#adding missing keys for repositories
@@ -29,9 +34,11 @@ echo
 	gpg --keyserver keys.gnupg.net --recv 886DDD89
 	gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
 
+#############################################################################################
 echo
 #reading new repository list again
 sudo apt-get update 
+#############################################################################################
 
 echo
 #installing standard packages or check 
@@ -106,7 +113,6 @@ sudo apt-get install wine --yes
 	sudo apt-get install samba --yes
 		sudo apt-get install samba-common-bin --yes
 	sudo apt-get install privoxy --yes
-	sudo apt-get install vuze --yes
 	sudo apt-get install gufw --yes
 	
 		#tor with several tools
@@ -192,6 +198,7 @@ sudo apt-get install keepassx --yes
 sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
 sudo apt-get install netflix-desktop --yes
+sudo apt-get install owncloud --yes
 echo
 wget -qO- https://get.docker.com/ | sh
 
