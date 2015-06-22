@@ -20,13 +20,14 @@ sudo add-apt-repository ppa:pipelight/stable --yes
 sudo apt-add-repository ppa:ehoover/compholio --yes
 sudo add-apt-repository ppa:micahflee/ppa --yes
 sudo add-apt-repository ppa:klaus-vormweg/bluefish --yes
+sudo add-apt-repository ppa:juju/stable --yes
 echo
 sudo add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --yes
 sudo add-apt-repository 'deb http://deb.torproject.org/torproject.org utopic main' --yes
 sudo add-apt-repository 'deb-src http://deb.torproject.org/torproject.org utopic main' --yes
-echo
+
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/community/xUbuntu_14.10/ /' >> /etc/apt/sources.list.d/owncloud.list"
-	
+
 echo
 
 	#adding missing keys for repositories
@@ -145,6 +146,7 @@ sudo apt-get install shutter --yes
 		sudo apt-get install pdftk --yes
 
 #development, science and calculation (production)
+sudo apt-get install juju-quickstart --yes
 sudo apt-get install android-studio --yes
 sudo apt-get install eclipse --yes
 sudo apt-get install octave --yes
@@ -170,10 +172,14 @@ sudo apt-get install geany --yes
 echo
 sudo apt-get install virtualbox linux-headers-$(uname -r) --yes
 sudo apt-get install qemu --yes
+	sudo apt-get install qemu-system-x86 --yes
+	sudo apt-get install qemu-system --yes
 	sudo apt-get install qemu-kvm --yes
+		sudo apt-get install qemu-kvm-extras --yes
 		sudo apt-get install libvirt-bin --yes
 		sudo apt-get install virt-manager --yes
-		sudo apt-get install virt-viewer --yes
+			sudo apt-get install virt-viewer --yes
+			sudo apt-get install python-spice-client-gtk --yes
 
 	#git with graphical user interfaces
 	sudo apt-get install git --yes
@@ -199,12 +205,16 @@ sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
 sudo apt-get install netflix-desktop --yes
 echo
+
 	wget http://download.opensuse.org/repositories/isv:ownCloud:community/xUbuntu_14.10/Release.key
 	sudo apt-key add - < Release.key 
 	sudo apt-get update
 sudo apt-get install owncloud --force-yes --yes
+
 echo
 wget -qO- https://get.docker.com/ | sh
+
+#############################################################################################
 
 echo
 #upgrade
@@ -212,9 +222,10 @@ sudo add-apt-repository --remove ppa:webupd8team/tor-browser --yes
 clear
 sudo apt-get upgrade --yes
 cd
+
 echo
 echo InstallStart finished
 echo
-cd
+
 cd InstallStart/Blender/
 sudo sh InstallStart-Blender.sh --yes
