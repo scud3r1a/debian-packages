@@ -19,7 +19,7 @@ echo
 
 sudo rm -r /opt/blender
 sudo mkdir /opt/blender
-sudo cp -r blender/* /opt/blender/
+sudo cp blender/* /opt/blender/
 
 sudo rm "/usr/share/applications/blender.desktop"
 sudo cp "InstallStart/Blender_first/blender.desktop" "/usr/share/applications/"

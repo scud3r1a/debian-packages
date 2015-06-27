@@ -20,8 +20,6 @@ sudo add-apt-repository ppa:pipelight/stable --yes
 sudo apt-add-repository ppa:ehoover/compholio --yes
 sudo add-apt-repository ppa:micahflee/ppa --yes
 sudo add-apt-repository ppa:klaus-vormweg/bluefish --yes
-sudo add-apt-repository ppa:juju/stable --yes
-echo
 sudo add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --yes
 sudo add-apt-repository 'deb http://deb.torproject.org/torproject.org utopic main' --yes
 sudo add-apt-repository 'deb-src http://deb.torproject.org/torproject.org utopic main' --yes
@@ -50,6 +48,7 @@ sudo apt-get install gksu --yes
 sudo apt-get install aptitude --yes
 sudo apt-get install preload --yes
 sudo apt-get install wget --yes
+sudo apt-get install curl --yes
 sudo apt-get install bmap-tools --yes
 sudo apt-get install ubuntu-restricted-extras --yes
 	sudo apt-get install unity-tweak-tool --yes
@@ -69,6 +68,8 @@ sudo apt-get install wine --yes
 
 	sudo apt-get install golang --yes
 	sudo apt-get install ruby --yes
+		sudo apt-get install irb --yes
+		sudo apt-get install rubygems --yes
 		sudo apt-get install libruby --yes  
 		sudo apt-get install libgtk2-ruby --yes
 		sudo apt-get install libglade2-ruby --yes
@@ -115,14 +116,6 @@ sudo apt-get install wine --yes
 		sudo apt-get install samba-common-bin --yes
 	sudo apt-get install privoxy --yes
 	sudo apt-get install gufw --yes
-	
-		#tor with several tools
-		sudo apt-get install tor --yes
-			sudo apt-get install tor-arm --yes
-			sudo apt-get install python-stem --yes
-			sudo apt-get install vidalia --yes
-			sudo apt-get install onionshare --yes
-		sudo apt-get install tor-browser --yes
 		
 #entertainment and media		
 sudo apt-get install spotify-client --yes
@@ -141,23 +134,16 @@ sudo apt-get install shutter --yes
 	sudo apt-get install musescore --yes
 	sudo apt-get install calibre --yes
 	sudo apt-get install sigil --yes
+	sudo apt-get install scribus --yes 
+		sudo apt-get install scribus-template --yes
 	sudo apt-get install lyx --yes
 	sudo apt-get install pdfchain --yes
 		sudo apt-get install pdftk --yes
 
-#development, science and calculation (production)
+#development
 sudo apt-get install juju-quickstart --yes
 sudo apt-get install android-studio --yes
 sudo apt-get install eclipse --yes
-sudo apt-get install octave --yes
-	sudo apt-get install octave-doc --yes 
-	sudo apt-get install octave-epstk --yes
-	sudo apt-get install gnuplot --yes
-sudo apt-get install geogebra --yes
-sudo apt-get install gelemental --yes
-sudo apt-get install avogadro --yes
-sudo apt-get install logisim --yes
-sudo apt-get install fritzing --yes
 sudo apt-get install spyder --yes
 sudo apt-get install gedit --yes
 sudo apt-get install vim --yes
@@ -170,16 +156,19 @@ sudo apt-get install gtcreator --yes
 sudo apt-get install gambas3 --yes
 sudo apt-get install geany --yes
 echo
-sudo apt-get install virtualbox linux-headers-$(uname -r) --yes
-sudo apt-get install qemu --yes
-	sudo apt-get install qemu-system-x86 --yes
-	sudo apt-get install qemu-system --yes
-	sudo apt-get install qemu-kvm --yes
-		sudo apt-get install qemu-kvm-extras --yes
-		sudo apt-get install libvirt-bin --yes
-		sudo apt-get install virt-manager --yes
-			sudo apt-get install virt-viewer --yes
-			sudo apt-get install python-spice-client-gtk --yes
+
+	#virtualization
+	sudo apt-get install openstack --yes
+	sudo apt-get install virtualbox --yes
+	sudo apt-get install qemu --yes
+		sudo apt-get install qemu-system-x86 --yes
+		sudo apt-get install qemu-system --yes
+		sudo apt-get install qemu-kvm --yes
+			sudo apt-get install qemu-kvm-extras --yes
+			sudo apt-get install libvirt-bin --yes
+			sudo apt-get install virt-manager --yes
+				sudo apt-get install virt-viewer --yes
+				sudo apt-get install python-spice-client-gtk --yes
 
 	#git with graphical user interfaces
 	sudo apt-get install git --yes
@@ -190,6 +179,20 @@ sudo apt-get install qemu --yes
 	sudo apt-get install android-tools-adb --yes
 	sudo apt-get install android-tools-fastboot --yes
 	
+#science and calculation 
+sudo apt-get install octave --yes
+	sudo apt-get install octave-doc --yes 
+	sudo apt-get install octave-epstk --yes
+	sudo apt-get install gnuplot --yes
+sudo apt-get install geogebra --yes
+sudo apt-get install gelemental --yes
+sudo apt-get install avogadro --yes
+sudo apt-get install logisim --yes
+sudo apt-get install fritzing --yes
+sudo apt-get install lightspeed --yes
+sudo apt-get install marble --yes
+	sudo apt-get install marble-qt --yes
+
 #internet and mail
 sudo apt-get install thunderbird --yes
 sudo apt-get install firefox --yes
@@ -198,6 +201,7 @@ sudo apt-get install chromium-browser --yes
 	sudo apt-get install chromium-browser-l10n --yes
 	sudo apt-get install chromium-codecs-ffmpeg --yes
 	sudo apt-get install chromium-codecs-ffmpeg-extra --yes
+sudo apt-get install tor-browser --yes
 
 #others
 sudo apt-get install keepassx --yes
@@ -213,7 +217,14 @@ sudo apt-get install owncloud --force-yes --yes
 
 echo
 wget -qO- https://get.docker.com/ | sh
-
+	sudo pip install -U docker-compose
+	echo
+	sudo docker pull nginx
+	sudo docker pull ubuntu
+	sudo docker pull rails
+	sudo docker pull centos
+	sudo docker pull debian
+	
 #############################################################################################
 
 echo
