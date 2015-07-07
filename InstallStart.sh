@@ -24,10 +24,6 @@ sudo add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --y
 sudo add-apt-repository 'deb http://deb.torproject.org/torproject.org utopic main' --yes
 sudo add-apt-repository 'deb-src http://deb.torproject.org/torproject.org utopic main' --yes
 
-sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/community/xUbuntu_14.10/ /' >> /etc/apt/sources.list.d/owncloud.list"
-
-echo
-
 	#adding missing keys for repositories
 	sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 94558F59 --yes
 	gpg --keyserver keys.gnupg.net --recv 886DDD89
@@ -50,6 +46,7 @@ sudo apt-get install preload --yes
 sudo apt-get install wget --yes
 sudo apt-get install curl --yes
 sudo apt-get install bmap-tools --yes
+sudo apt-get install pv --yes
 sudo apt-get install ubuntu-restricted-extras --yes
 	sudo apt-get install unity-tweak-tool --yes
 	sudo apt-get install gparted --yes
@@ -104,6 +101,9 @@ sudo apt-get install wine --yes
 	sudo apt-get install python-pip --yes
 		sudo pip install --upgrade pip
 		sudo pip install --upgrade virtualenv
+		echo
+		sudo pip install awscli
+		
 
 	#network and connecting
 	sudo apt-get install putty --yes
@@ -112,8 +112,6 @@ sudo apt-get install wine --yes
 	sudo apt-get install wireshark --yes
 		sudo apt-get install tshark --yes 
 	sudo apt-get install synaptic --yes
-	sudo apt-get install samba --yes
-		sudo apt-get install samba-common-bin --yes
 	sudo apt-get install privoxy --yes
 	sudo apt-get install gufw --yes
 		
@@ -141,7 +139,6 @@ sudo apt-get install shutter --yes
 		sudo apt-get install pdftk --yes
 
 #development
-sudo apt-get install juju-quickstart --yes
 sudo apt-get install android-studio --yes
 sudo apt-get install eclipse --yes
 sudo apt-get install spyder --yes
@@ -158,7 +155,6 @@ sudo apt-get install geany --yes
 echo
 
 	#virtualization
-	sudo apt-get install openstack --yes
 	sudo apt-get install virtualbox --yes
 	sudo apt-get install qemu --yes
 		sudo apt-get install qemu-system-x86 --yes
@@ -208,22 +204,18 @@ sudo apt-get install keepassx --yes
 sudo apt-get install steam --yes
 sudo apt-get install bleachbit --yes
 sudo apt-get install netflix-desktop --yes
-echo
-
-	wget http://download.opensuse.org/repositories/isv:ownCloud:community/xUbuntu_14.10/Release.key
-	sudo apt-key add - < Release.key 
-	sudo apt-get update
-sudo apt-get install owncloud --force-yes --yes
 
 echo
+
 wget -qO- https://get.docker.com/ | sh
 	sudo pip install -U docker-compose
-	echo
-	sudo docker pull nginx
-	sudo docker pull ubuntu
-	sudo docker pull rails
-	sudo docker pull centos
-	sudo docker pull debian
+	
+echo
+
+wget https://raw.githubusercontent.com/hypriot/flash/master/$(uname -s)/flash
+	chmod +x flash
+	sudo mv flash /usr/local/bin/flash
+
 	
 #############################################################################################
 
