@@ -95,6 +95,7 @@ sudo apt-get install wine --yes
 		sudo apt-get install qttools5-dev-tools --yes
 		sudo apt-get install qt5-doc --yes
 		sudo apt-get install qt4-doc --yes
+	sudo apt-get install nodejs --yes
 
 	#python and pip, upgrade
 	sudo apt-get install python-dev --yes
