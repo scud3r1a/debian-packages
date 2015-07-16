@@ -10,7 +10,4 @@ For the best experience, please use an distribution version comparable to Ubuntu
 Use "InstallStart-Update.sh" outside your InstallStart folder to install the newest version of InstallStart.
 		
 #####git clone "https://github.com/githubato/InstallStart"
-#####sudo sh InstallStart.sh --yes
-
-
-
+#####sudo sh InstallStart.sh 
