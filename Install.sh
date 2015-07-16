@@ -158,6 +158,7 @@ sudo apt-get install geany --yes
 echo
 
 	#virtualization
+	sudo apt-get install vagrant --yes
 	sudo apt-get install virtualbox --yes
 	sudo apt-get install qemu --yes
 		sudo apt-get install qemu-system-x86 --yes
@@ -210,15 +211,9 @@ sudo apt-get install netflix-desktop --yes
 
 #############################################################################################
 
-wget https://d29vzk4ow07wi7.cloudfront.net/94463f5d68bcb59b2953fbabc228d3d9280a59e3?response-content-disposition=attachment%3Bfilename%3D%22vagrant_1.7.3_x86_64.deb%22&Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHAqOi8vZDI5dnprNG93MDd3aTcuY2xvdWRmcm9udC5uZXQvOTQ0NjNmNWQ2OGJjYjU5YjI5NTNmYmFiYzIyOGQzZDkyODBhNTllMz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWF0dGFjaG1lbnQlM0JmaWxlbmFtZSUzRCUyMnZhZ3JhbnRfMS43LjNfeDg2XzY0LmRlYiUyMiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTQzNjk2MDYzM30sIklwQWRkcmVzcyI6eyJBV1M6U291cmNlSXAiOiIwLjAuMC4wLzAifX19XX0_&Signature=UwpsyodigaEIG55EnoslbPs528EjbLXf29Fk62QiDo99kUE-gdUtgpb6NU9CGwYLrfDmj~MBdBnS8UmveQ3abW85dlna19UlWXwXBQgUhG2~t6qqEHf4mIAEBqWBfCxot444KVUJwzrNLnezV0uXlG3xhX47Ink0XO7pYtyslqUHrubRxydchvPnOTGxnIL9YsoJfJ-U-MNt8CbIBs6A0~IHMgK-KXgAtPVeg5imI6jy8lPlFqJcZyIm0U4eqMvUYmmZEFDKlLlIHwjVbXdZKJIyQaRWR7LQZbxu4oQ1bcLvGhAi2iMTVRN6KsHXxJHOBOdy9aFWA7~Es6hHoPvKQw__&Key-Pair-Id=APKAIFKFWOMXM2UMTSFA
-	dpkg -i vagrant_1.7.3_x86_64.deb
 wget -qO- https://get.docker.com/ | sh
 	sudo pip install -U docker-compose
-wget https://raw.githubusercontent.com/hypriot/flash/master/$(uname -s)/flash
-	chmod +x flash
-	sudo mv flash /usr/local/bin/flash
 
-	
 #############################################################################################
 
 echo
