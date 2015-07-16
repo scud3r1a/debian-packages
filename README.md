@@ -12,3 +12,4 @@ Use "InstallStart-Update.sh" outside your InstallStart folder to install the new
 #####sudo sh InstallStart.sh 
 
 Only woking with Ubuntu or Debian-like distributions
+Read "Install.sh" to learn more.
