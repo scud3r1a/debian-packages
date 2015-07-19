@@ -7,8 +7,8 @@ for your Debian or Ubuntu based Linux OS.
 Use "InstallStart-Update.sh" outside your InstallStart folder to install and start the newest version of InstallStart.
 		
 #####git clone "https://github.com/githubato/InstallStart"
-#####     sh InstallStart.sh 
-#####         sh Configuration.sh 
+#####sh Start.sh / sh Install.sh 
+#####sh Configuration.sh 
 
 Only woking with Ubuntu or Debian-like distributions
 Read "Install.sh" and "Configuration.sh" to learn more.
