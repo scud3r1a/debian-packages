@@ -216,6 +216,9 @@ wget -qO- https://get.docker.com/ | sh
 
 #############################################################################################
 
+wget https://atom.io/download/deb
+	dpkg -i deb
+
 echo
 #upgrade
 sudo add-apt-repository --remove ppa:webupd8team/tor-browser --yes
