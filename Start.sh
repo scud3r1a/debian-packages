@@ -1,4 +1,3 @@
-#Update
 echo
 echo Update starting
 echo
