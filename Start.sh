@@ -10,6 +10,4 @@ chmod 666 InstallStart/
 
 echo
 
-#InstallStart
-cd
 sudo sh "InstallStart/Install.sh"
