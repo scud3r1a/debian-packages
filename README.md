@@ -7,7 +7,7 @@ for your Debian or Ubuntu based OS.
 ```
 apt-get install -y git && \
 git clone "https://github.com/githubato/InstallStart" && \
-sh InstallStart/Install.sh && \
+sh InstallStart/InstallStart.sh && \
 sh InstallStart/Configuration.sh 
 ```
 
