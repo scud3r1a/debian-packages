@@ -11,5 +11,7 @@ sh InstallStart/InstallStart.sh && \
 sh InstallStart/Configuration.sh 
 ```
 
-Only woking with Ubuntu or Debian-like distributions
+Only working with Ubuntu or Debian-like distributions
 Read "InstallStart.sh" and "Configuration.sh" to learn more.
+
+######ubuntu.com
