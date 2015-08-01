@@ -5,9 +5,9 @@ This is a very simple script that installs the most important normal-user applic
 for your Debian or Ubuntu based OS.
 
 ```
-#####git clone "https://github.com/githubato/InstallStart"
-#####sh InstallStart/Install.sh
-#####sh InstallStart/Configuration.sh 
+git clone "https://github.com/githubato/InstallStart" && \
+sh InstallStart/Install.sh && \
+sh InstallStart/Configuration.sh 
 ```
 
 Only woking with Ubuntu or Debian-like distributions
