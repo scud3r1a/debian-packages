@@ -12,4 +12,4 @@ sh InstallStart/Configuration.sh
 ```
 
 Only woking with Ubuntu or Debian-like distributions
-Read "Install.sh" and "Configuration.sh" to learn more.
+Read "InstallStart.sh" and "Configuration.sh" to learn more.
