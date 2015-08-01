@@ -11,14 +11,11 @@ add-apt-repository multiverse
 add-apt-repository restricted
 echo
 add-apt-repository ppa:ehbello/fritzing --yes
-add-apt-repository ppa:git-core/ppa --yes
 add-apt-repository ppa:sunab/sigil-git --yes
 add-apt-repository ppa:tualatrix/ppa --yes
 add-apt-repository ppa:paolorotolo/android-studio --yes
-add-apt-repository ppa:ubuntu-mozilla-daily/ppa --yes
 add-apt-repository ppa:pipelight/stable --yes
 apt-add-repository ppa:ehoover/compholio --yes
-add-apt-repository ppa:micahflee/ppa --yes
 add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --yes
 add-apt-repository 'deb http://deb.torproject.org/torproject.org utopic main' --yes
 add-apt-repository 'deb-src http://deb.torproject.org/torproject.org utopic main' --yes
@@ -194,7 +191,6 @@ apt-get install marble --yes
 #internet and mail
 apt-get install thunderbird --yes
 apt-get install firefox --yes
-	apt-get install firefox-trunk --yes
 apt-get install chromium-browser --yes
 	apt-get install chromium-browser-l10n --yes
 	apt-get install chromium-codecs-ffmpeg --yes
@@ -204,7 +200,6 @@ apt-get install chromium-browser --yes
 apt-get install keepassx --yes
 apt-get install steam --yes
 apt-get install netflix-desktop --yes
-
 wget https://atom.io/download/deb
 	dpkg -i deb
 
