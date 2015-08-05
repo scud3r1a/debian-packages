@@ -202,6 +202,8 @@ apt-get install steam --yes
 apt-get install netflix-desktop --yes
 wget https://atom.io/download/deb
 	dpkg -i deb
+wget https://github.com/angryziber/ipscan/releases/download/3.3.3/ipscan_3.3.3_amd64.deb
+	dpkg -i ipscan_3.3.3_amd64.deb
 
 #final upgrade
 echo
