@@ -90,8 +90,6 @@ apt-get install wine --yes
 		apt-get install qt4-dev-tools --yes
 		apt-get install qttools5-dev-tools --yes
 		apt-get install qt5-doc --yes
-		apt-get install qt4-doc --yes
-	apt-get install nodejs --yes
 
 	#python and pip, upgrade
 	apt-get install python-dev --yes
@@ -101,7 +99,6 @@ apt-get install wine --yes
 		echo
 		pip install awscli
 
-
 	#network and connecting
 	apt-get install putty --yes
 	apt-get install filezilla --yes
@@ -110,7 +107,6 @@ apt-get install wine --yes
 		apt-get install tshark --yes
 	apt-get install synaptic --yes
 	apt-get install privoxy --yes
-	apt-get install gufw --yes
 
 #entertainment and media
 apt-get install spotify-client --yes
@@ -164,12 +160,7 @@ echo
 			apt-get install virt-manager --yes
 				apt-get install virt-viewer --yes
 				apt-get install python-spice-client-gtk --yes
-
-	#git with graphical user interfaces
-	apt-get install git --yes
-		apt-get install gitk --yes
-		apt-get install git-gui --yes
-
+				
 	#android tools
 	apt-get install android-tools-adb --yes
 	apt-get install android-tools-fastboot --yes
