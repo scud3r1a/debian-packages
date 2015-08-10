@@ -1,3 +1,5 @@
+###############################################################################
+
 echo
 echo InstallStart starting
 echo
@@ -99,6 +101,8 @@ apt-get install wine --yes
 		echo
 		pip install awscli
 
+#############################################################################################
+
 	#network and connecting
 	apt-get install putty --yes
 	apt-get install filezilla --yes
@@ -182,6 +186,8 @@ apt-get install marble --yes
 #internet and mail
 apt-get install thunderbird --yes
 apt-get install firefox --yes
+apt-get install chromium --yes
+	apt-get install chromium-l10n --yes
 apt-get install chromium-browser --yes
 	apt-get install chromium-browser-l10n --yes
 	apt-get install chromium-codecs-ffmpeg --yes
@@ -191,14 +197,29 @@ apt-get install chromium-browser --yes
 apt-get install keepassx --yes
 apt-get install steam --yes
 apt-get install netflix-desktop --yes
+echo
+
+#############################################################################################
+
 wget https://atom.io/download/deb
 	dpkg -i deb
+		rm deb
+			echo
+			
 wget https://github.com/angryziber/ipscan/releases/download/3.3.3/ipscan_3.3.3_amd64.deb
 	dpkg -i ipscan_3.3.3_amd64.deb
+		rm ipscan_3.3.3_amd64.deb
+			echo
+			
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb 
+	dpkg -i google-chrome-stable_current_i386.deb 
+		rm google-chrome-stable_current_i386.deb 
+			echo
 
 #final upgrade
-echo
 clear
+echo
+
 apt-get upgrade --yes
 apt-get autoremove --yes
 apt-get clean
@@ -207,3 +228,50 @@ clear
 echo
 echo InstallStart finished
 echo
+
+###############################################################################
+
+echo
+echo Docker Setup starting
+echo
+
+###############################################################################
+
+#Docker update
+wget -qO- https://get.docker.com/ | sh
+echo
+	
+	#Docker Compose installation
+	pip install -U docker-compose
+	echo
+	
+	#Docker machine installation
+	curl -L downloads.hypriot.com/docker-machine_0.4.0-dev_linux-amd64 > /usr/local/bin/docker-machine
+		chmod +x /usr/local/bin/docker-machine
+			echo
+	
+	#Docker images
+	docker pull swarm:latest
+	echo
+	docker pull centos:latest
+	docker pull nginx:latest
+	docker pull debian:latest
+	docker pull ubuntu:latest
+		docker pull ubuntu:wily
+		docker pull ubuntu-upstart
+	docker pull rails:latest
+	docker pull django:latest
+	docker pull php:latest
+		docker pull php:5.6-apache
+	docker pull alpine:latest
+	docker pull fedora:latest
+	echo
+	clear
+
+###############################################################################
+	
+echo
+echo Docker Setup finished
+echo
+
+###############################################################################
