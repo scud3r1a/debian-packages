@@ -72,10 +72,11 @@ echo
 ###############################################################################
 
 #Vagrant installation
-mkdir /vagrant && cd /vagrant
-	echo
-		clear
-			echo
+mkdir -p -m=777 /vagrant 
+	cd /vagrant
+		echo
+			clear
+				echo
 
 wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
   dpkg -i vagrant_1.7.4_x86_64.deb
@@ -87,7 +88,7 @@ wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
 ###############################################################################
 
   #Vagrant images
-	mkdir hashicorp
+	mkdir -p -m=777 hashicorp
 		cd hashicorp
 			echo
 				vagrant init hashicorp/precise64
@@ -96,7 +97,7 @@ wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
 							echo
 								cd /vagrant
 									echo
-	mkdir ubuntu
+	mkdir -p -m=777 ubuntu
 		cd ubuntu
 			echo
 				vagrant init ubuntu/trusty64
@@ -106,7 +107,7 @@ wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
 								cd /vagrant
 									echo
 
-	mkdir fedora
+	mkdir -p -m=777 fedora
 		cd fedora
 			echo
 				vagrant init chef/fedora-21
@@ -116,7 +117,7 @@ wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
 								cd /vagrant
 									echo
 
-	mkdir centos
+	mkdir -p -m=777 centos
 		cd centos
 			echo
 				vagrant init chef/centos-7.0
