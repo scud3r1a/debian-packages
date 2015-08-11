@@ -252,19 +252,22 @@ echo
 	
 	#Docker images
 	docker pull swarm:latest
+	docker pull dockerui/dockerui
 	echo
-	docker pull centos:latest
-	docker pull nginx:latest
-	docker pull debian:latest
-	docker pull ubuntu:latest
+	docker pull centos
+	docker pull nginx
+	docker pull debian
+	docker pull ubuntu
 		docker pull ubuntu:wily
 		docker pull ubuntu-upstart
-	docker pull rails:latest
-	docker pull django:latest
+		docker pull jujusolutions/jujubox
+			docker pull jujusolutions/charmbox 
+	docker pull rails
+	docker pull django
 	docker pull php:latest
 		docker pull php:5.6-apache
-	docker pull alpine:latest
-	docker pull fedora:latest
+	docker pull alpine
+	docker pull fedora
 	echo
 	clear
 
