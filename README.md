@@ -6,7 +6,7 @@ for your Ubuntu (based) OS.
 
 ```
 apt-get install -y git && \
-  rm -f -r Installstart && \
+  rm -f -r InstallStart && \
   
 git clone "https://github.com/githubato/InstallStart" && \
 
@@ -15,7 +15,7 @@ sh InstallStart/InstallStart.sh && \
     sh InstallStart/Configuration.sh 
 ```
 
-Only working with Ubuntu or Debian-like distributions
-Read "InstallStart.sh" and "Configuration.sh" to learn more.
+Only working with Ubuntu or Ubuntu-like distributions
+Read "InstallStart.sh" and other scripts to learn more.
 
 ######ubuntu.com
