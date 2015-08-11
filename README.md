@@ -2,7 +2,7 @@
 ##The most important script for a new Ubuntu installation
 
 This is a very simple script that installs the most important normal-user applications and packages
-for your Debian or Ubuntu based OS.
+for your Ubuntu (based) OS.
 
 ```
 apt-get install -y git && \
