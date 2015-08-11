@@ -6,9 +6,11 @@ for your Debian or Ubuntu based OS.
 
 ```
 apt-get install -y git && \
+  rm -r Installstart && \
 git clone "https://github.com/githubato/InstallStart" && \
 sh InstallStart/InstallStart.sh && \
-sh InstallStart/Configuration.sh 
+  sh InstallStart/V-Tools.sh && \
+    sh InstallStart/Configuration.sh 
 ```
 
 Only working with Ubuntu or Debian-like distributions
