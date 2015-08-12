@@ -88,15 +88,6 @@ wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
 ###############################################################################
 
   #Vagrant images
-	mkdir -p -m=777 hashicorp
-		cd hashicorp
-			echo
-				vagrant init hashicorp/precise64
-					echo
-						vagrant up --provider virtualbox
-							echo
-								cd /vagrant
-									echo
 	mkdir -p -m=777 ubuntu
 		cd ubuntu
 			echo
@@ -127,18 +118,8 @@ wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
 								cd /vagrant
 									echo
 
-	mkdir -p -m=777 centos-atomic
-		cd centos-atomic
-			echo
-				vagrant init centos/atomic-host
-					echo
-						vagrant up --provider virtualbox
-							echo
-								cd /vagrant
-									echo
-						
-	mkdir -p -m=777 fedora-atomic
-		cd fedora-atomic
+	mkdir -p -m=777 atomic
+		cd atomic
 			echo
 				vagrant init projectatomic/fedora22
 					echo
@@ -152,6 +133,26 @@ wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
 			echo
 				vagrant init ubuntu/ubuntu-15.04-snappy-core-stable
 					echo 
+						vagrant up --provider virtualbox
+							echo
+								cd /vagrant
+									echo
+	
+	mkdir -p -m=777 photon
+		cd photon
+			echo
+				vagrant init vmware/photon
+					echo
+						vagrant up --provider virtualbox
+							echo
+								cd /vagrant
+									echo
+	
+	mkdir -p -m=777 coreos
+		cd coreos
+			echo
+				vagrant init vjayaram/cloud-coreos-stack
+					echo
 						vagrant up --provider virtualbox
 							echo
 								cd /vagrant
