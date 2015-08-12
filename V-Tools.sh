@@ -45,7 +45,7 @@ echo
 				clear
 					echo
 
-	###############################################################################
+###############################################################################
 
 	#Docker images
 	docker pull swarm:latest
@@ -127,6 +127,36 @@ wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
 								cd /vagrant
 									echo
 
+	mkdir -p -m=777 centos-atomic
+		cd centos-atomic
+			echo
+				vagrant init centos/atomic-host
+					echo
+						vagrant up --provider virtualbox
+							echo
+								cd /vagrant
+									echo
+						
+	mkdir -p -m=777 fedora-atomic
+		cd fedora-atomic
+			echo
+				vagrant init projectatomic/fedora22
+					echo
+						vagrant up --provider virtualbox
+							echo
+								cd /vagrant
+									echo
+									
+	mkdir -p -m=777 snappycore
+		cd snappycor
+			echo
+				vagrant init ubuntu/ubuntu-15.04-snappy-core-stable
+					echo 
+						vagrant up --provider virtualbox
+							echo
+								cd /vagrant
+									echo
+	
 ###############################################################################
 
 cd ~/
