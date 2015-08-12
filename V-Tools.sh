@@ -148,7 +148,7 @@ wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
 									echo
 									
 	mkdir -p -m=777 snappycore
-		cd snappycor
+		cd snappycore
 			echo
 				vagrant init ubuntu/ubuntu-15.04-snappy-core-stable
 					echo 
