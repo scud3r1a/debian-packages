@@ -35,6 +35,7 @@ apt-get update
 
 echo
 #installing standard packages or check
+apt-get install tree --yes
 apt-get install dpkg --yes
 apt-get install build-essential --yes
 apt-get install ntfs-3g --yes
