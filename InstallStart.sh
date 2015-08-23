@@ -121,7 +121,7 @@ apt-get install shutter --yes
 	apt-get install audacity --yes
 	apt-get install libreoffice --yes
 	apt-get install dia --yes
-	apt-get install openshot --yes
+	apt-get install kdenlive --yes
 	apt-get install gimp --yes
 	apt-get install inkscape --yes
 	apt-get install k3b --yes
