@@ -12,6 +12,7 @@ add-apt-repository universe
 add-apt-repository multiverse
 add-apt-repository restricted
 echo
+add-apt-repository ppa:graphics-drivers/ppa --yes
 add-apt-repository ppa:ehbello/fritzing --yes
 add-apt-repository ppa:sunab/sigil-git --yes
 add-apt-repository ppa:tualatrix/ppa --yes
@@ -184,6 +185,7 @@ apt-get install chromium-browser --yes
 apt-get install keepassx --yes
 apt-get install steam --yes
 apt-get install netflix-desktop --yes
+apt-get install nvidia-355 --yes
 echo
 
 #############################################################################################
@@ -198,10 +200,12 @@ wget https://github.com/angryziber/ipscan/releases/download/3.3.3/ipscan_3.3.3_a
 		rm ipscan_3.3.3_amd64.deb
 			echo
 			
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb 
-	dpkg -i google-chrome-stable_current_i386.deb 
-		rm google-chrome-stable_current_i386.deb 
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
+	dpkg -i google-chrome-stable_current_amd64.deb 
+		rm google-chrome-stable_current_amd64.deb 
 			echo
+
+#############################################################################################
 
 #final upgrade
 clear
