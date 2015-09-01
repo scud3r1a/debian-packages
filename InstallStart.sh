@@ -39,6 +39,7 @@ echo
 apt-get install tree --yes
 apt-get install dpkg --yes
 apt-get install build-essential --yes
+apt-get install automake --yes
 apt-get install ntfs-3g --yes
 apt-get install gksu --yes
 apt-get install aptitude --yes
