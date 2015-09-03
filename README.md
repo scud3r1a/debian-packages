@@ -16,11 +16,8 @@ git clone "https://github.com/githubato/InstallStart" && \
     echo && \
     
 sh InstallStart/InstallStart.sh && \
-  sh InstallStart/V-Tools.sh && \
-    sh InstallStart/Configuration.sh 
+  sh InstallStart/Configuration.sh 
 ```
 
 Only working with Ubuntu or Ubuntu-like distributions
-Read "InstallStart.sh" and other scripts to learn more.
-
-######ubuntu.com
+Read "InstallStart.sh" and "Configuration.sh" to learn more.
