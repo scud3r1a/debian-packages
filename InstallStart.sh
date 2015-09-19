@@ -12,6 +12,7 @@ add-apt-repository universe
 add-apt-repository multiverse
 add-apt-repository restricted
 echo
+add-apt-repository ppa:snappy-dev/tools --yes
 add-apt-repository ppa:graphics-drivers/ppa --yes
 add-apt-repository ppa:ehbello/fritzing --yes
 add-apt-repository ppa:sunab/sigil-git --yes
@@ -48,6 +49,8 @@ apt-get install wget --yes
 apt-get install curl --yes
 apt-get install bmap-tools --yes
 apt-get install pv --yes
+apt-get install snappy-tools --yes
+apt-get install bzr --yes
 apt-get install ubuntu-restricted-extras --yes
 	apt-get install unity-tweak-tool --yes
 	apt-get install gparted --yes
