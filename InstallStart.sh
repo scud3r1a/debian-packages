@@ -65,6 +65,7 @@ apt-get install wine --yes
 		pipelight-plugin --enable silverlight
 
 	apt-get install golang --yes
+		apt-get install golang-go-linux-arm --yes
 	apt-get install ruby --yes
 		apt-get install irb --yes
 		apt-get install rubygems --yes
