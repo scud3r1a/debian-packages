@@ -18,6 +18,7 @@ add-apt-repository ppa:ehbello/fritzing --yes
 add-apt-repository ppa:sunab/sigil-git --yes
 add-apt-repository ppa:tualatrix/ppa --yes
 add-apt-repository ppa:paolorotolo/android-studio --yes
+apt-add-repository ppa:cordova-ubuntu/ppa --yes
 add-apt-repository ppa:pipelight/stable --yes
 apt-add-repository ppa:ehoover/compholio --yes
 add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --yes
@@ -143,6 +144,7 @@ apt-get install shutter --yes
 		apt-get install pdftk --yes
 
 #development
+apt-get install cordova-cli --yes
 apt-get install android-studio --yes
 apt-get install eclipse --yes
 apt-get install spyder --yes
