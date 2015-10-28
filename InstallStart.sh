@@ -60,7 +60,7 @@ apt-get install ubuntu-restricted-extras --yes
 		apt-get install p7zip-full --yes
 		apt-get install p7zip-rar --yes
 	apt-get install makeself --yes
-	aptitude install libfuse-dev --yes
+	apt-get install libfuse-dev --yes
 
 apt-get install wine --yes
 	apt-get install playonlinux --yes
@@ -77,6 +77,7 @@ apt-get install wine --yes
 		apt-get install libgtk2-ruby --yes
 		apt-get install libglade2-ruby --yes
 		apt-get install libopenssl-ruby --yes
+		gem install bundler
 	apt-get install haskell-platform --yes
 		apt-get install ghc --yes
 	apt-get install groovy --yes
@@ -106,7 +107,6 @@ apt-get install wine --yes
 	apt-get install python-pip --yes
 		pip install --upgrade pip
 		pip install --upgrade virtualenv
-		echo
 		pip install awscli
 
 #############################################################################################
