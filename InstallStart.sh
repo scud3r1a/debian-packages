@@ -64,50 +64,6 @@ apt-get install ubuntu-restricted-extras --yes
 
 apt-get install wine --yes
 	apt-get install playonlinux --yes
-	apt-get install --install-recommends pipelight-multi --yes
-		pipelight-plugin --update
-		pipelight-plugin --enable silverlight
-
-	apt-get install golang --yes
-		apt-get install golang-go-linux-arm --yes
-	apt-get install ruby --yes
-		apt-get install irb --yes
-		apt-get install rubygems --yes
-		apt-get install libruby --yes
-		apt-get install libgtk2-ruby --yes
-		apt-get install libglade2-ruby --yes
-		apt-get install libopenssl-ruby --yes
-		gem install bundler
-	apt-get install haskell-platform --yes
-		apt-get install ghc --yes
-	apt-get install groovy --yes
-	apt-get install mawk --yes
-	apt-get install openjdk-7-jre --yes
-		apt-get install icedtea-7-plugin --yes
-		apt-get install openjdk-7-jdk --yes
-		apt-get install openjdk-7-source --yes
-		apt-get install openjdk-7-demo --yes
-		apt-get install openjdk-7-doc --yes
-		apt-get install openjdk-7-jre-headless --yes
-		apt-get install openjdk-7-jre-lib --yes
-		apt-get install gcj-jre --yes
-	apt-get install lua5.2 --yes
-		apt-get install lua5.2-doc --yes
-	apt-get install fp-compiler --yes
-		apt-get install fp-ide --yes
-	apt-get install perl --yes
-	apt-get install qt5-default --yes
-		apt-get install qt4-default --yes
-		apt-get install qt4-dev-tools --yes
-		apt-get install qttools5-dev-tools --yes
-		apt-get install qt5-doc --yes
-
-	#python and pip, upgrade
-	apt-get install python-dev --yes
-	apt-get install python-pip --yes
-		pip install --upgrade pip
-		pip install --upgrade virtualenv
-		pip install awscli
 
 #############################################################################################
 
@@ -119,6 +75,7 @@ apt-get install wine --yes
 		apt-get install tshark --yes
 	apt-get install synaptic --yes
 	apt-get install privoxy --yes
+	apt-get install samba --yes
 
 #entertainment and media
 apt-get install spotify-client --yes
