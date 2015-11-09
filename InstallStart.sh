@@ -21,9 +21,6 @@ add-apt-repository ppa:paolorotolo/android-studio --yes
 apt-add-repository ppa:cordova-ubuntu/ppa --yes
 add-apt-repository ppa:pipelight/stable --yes
 apt-add-repository ppa:ehoover/compholio --yes
-add-apt-repository 'deb http://repository.spotify.com/ stable non-free' --yes
-add-apt-repository 'deb http://deb.torproject.org/torproject.org utopic main' --yes
-add-apt-repository 'deb-src http://deb.torproject.org/torproject.org utopic main' --yes
 
 	#adding missing keys for repositories
 	apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 94558F59 --yes
@@ -33,7 +30,8 @@ add-apt-repository 'deb-src http://deb.torproject.org/torproject.org utopic main
 #############################################################################################
 echo
 #reading new repository list again
-apt-get update
+apt-get update --fix-missing
+apt-get update -ymmq
 #############################################################################################
 
 echo
@@ -56,19 +54,14 @@ apt-get install ubuntu-restricted-extras --yes
 	apt-get install unity-tweak-tool --yes
 	apt-get install gparted --yes
 	apt-get install archivemount --yes
-	apt-get install p7zip --yes
-		apt-get install p7zip-full --yes
-		apt-get install p7zip-rar --yes
 	apt-get install makeself --yes
 	apt-get install libfuse-dev --yes
-
-apt-get install wine --yes
+	apt-get install wine --yes
 	apt-get install playonlinux --yes
 
 #############################################################################################
 
 	#network and connecting
-	apt-get install putty --yes
 	apt-get install filezilla --yes
 	apt-get install openvpn --yes
 	apt-get install wireshark --yes
@@ -76,6 +69,7 @@ apt-get install wine --yes
 	apt-get install synaptic --yes
 	apt-get install privoxy --yes
 	apt-get install samba --yes
+	apt-get install openssh-client openssh-server --yes
 
 #entertainment and media
 apt-get install spotify-client --yes
@@ -107,7 +101,6 @@ apt-get install eclipse --yes
 apt-get install spyder --yes
 apt-get install gedit --yes
 apt-get install vim --yes
-apt-get install bluefish --yes
 apt-get install gambas2 --yes
 apt-get install emacs --yes
 apt-get install idle --yes
@@ -122,10 +115,6 @@ echo
 	apt-get install android-tools-fastboot --yes
 
 #science and calculation
-apt-get install octave --yes
-	apt-get install octave-doc --yes
-	apt-get install octave-epstk --yes
-	apt-get install gnuplot --yes
 apt-get install geogebra --yes
 apt-get install gelemental --yes
 apt-get install avogadro --yes
@@ -148,7 +137,6 @@ apt-get install chromium-browser --yes
 #others
 apt-get install keepassx --yes
 apt-get install steam --yes
-apt-get install netflix-desktop --yes
 apt-get install nvidia-355 --yes
 echo
 
