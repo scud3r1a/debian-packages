@@ -36,26 +36,41 @@ apt-get update -ymmq
 
 echo
 #installing standard packages or check
-apt-get install tree --yes
-apt-get install dpkg --yes
-apt-get install build-essential --yes
-apt-get install automake --yes
-apt-get install ntfs-3g --yes
-apt-get install gksu --yes
-apt-get install aptitude --yes
-apt-get install preload --yes
-apt-get install wget --yes
-apt-get install curl --yes
-apt-get install bmap-tools --yes
-apt-get install pv --yes
-apt-get install snappy-tools --yes
-apt-get install bzr --yes
-apt-get install ubuntu-restricted-extras --yes
-	apt-get install unity-tweak-tool --yes
-	apt-get install gparted --yes
-	apt-get install archivemount --yes
-	apt-get install makeself --yes
-	apt-get install libfuse-dev --yes
+apt-get install --force-yes --yes \
+	tree \
+	dpkg \
+	build-essential \
+	automake \
+	gksu \
+	preload \
+	wget \
+	curl \
+	ntfs-3g \
+	hfsutils \
+	hfsprogs \
+	exfat-fuse \
+	archivemount \
+	makeself \
+	libfuse-dev \
+	apache2-utils \
+	libssl-dev \
+	which \
+	man \
+	ca-certificates \
+	vim \
+	nano \
+	python \
+	openssh-server \
+	openssh-client \
+	openvpn \
+	openssl \
+	iputils \
+	iproute2 \
+	binfmt-support \
+	debootstrap \
+	dosfstools \
+	apt-cacher-ng
+
 	apt-get install wine --yes
 	apt-get install playonlinux --yes
 
@@ -69,7 +84,6 @@ apt-get install ubuntu-restricted-extras --yes
 	apt-get install synaptic --yes
 	apt-get install privoxy --yes
 	apt-get install samba --yes
-	apt-get install openssh-client openssh-server --yes
 	apt-get install sshpass --force-yes --yes
 
 #entertainment and media
