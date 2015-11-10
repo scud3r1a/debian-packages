@@ -70,6 +70,7 @@ apt-get install ubuntu-restricted-extras --yes
 	apt-get install privoxy --yes
 	apt-get install samba --yes
 	apt-get install openssh-client openssh-server --yes
+	apt-get install sshpass --force-yes --yes
 
 #entertainment and media
 apt-get install spotify-client --yes
