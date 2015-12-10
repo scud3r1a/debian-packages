@@ -6,20 +6,30 @@ add-apt-repository universe
 add-apt-repository multiverse
 add-apt-repository restricted
 echo
+clear
 
 add-apt-repository ppa:snappy-dev/tools --yes
+echo
 add-apt-repository ppa:graphics-drivers/ppa --yes
+echo
 add-apt-repository ppa:ehbello/fritzing --yes
+echo
 add-apt-repository ppa:sunab/sigil-git --yes
+echo
 add-apt-repository ppa:tualatrix/ppa --yes
+echo
 add-apt-repository ppa:paolorotolo/android-studio --yes
+echo
 apt-add-repository ppa:cordova-ubuntu/ppa --yes
+echo
 add-apt-repository ppa:pipelight/stable --yes
+echo
 apt-add-repository ppa:ehoover/compholio --yes
+echo
 add-apt-repository ppa:danielrichter2007/grub-customizer --yes
+echo
 
 #############################################################################################
-echo
 
 # Clean up
 apt-get remove --yes \
@@ -60,6 +70,9 @@ apt-get install --force-yes --yes --no-install-recommends \
 		apache2-utils \
 		libssl-dev \
 		man \
+		unzip \
+		bzip2 \
+		tar \
 		ca-certificates \
 		vim \
 		nano \
@@ -112,7 +125,6 @@ apt-get install --force-yes --yes --no-install-recommends \
  		gelemental \
  		avogadro \
  		logisim \
- 		fritzing \
  		lightspeed \
  		marble \
 	 	marble-qt \
@@ -134,11 +146,13 @@ wget https://atom.io/download/deb
 	dpkg -i deb
 		rm -rf deb
 			echo
+
 rm -rf ipscan_3.3.3_amd64.deb
 wget https://github.com/angryziber/ipscan/releases/download/3.3.3/ipscan_3.3.3_amd64.deb
 	dpkg -i ipscan_3.3.3_amd64.deb
 		rm -rf ipscan_3.3.3_amd64.deb
 			echo
+
 rm -rf google-chrome-stable_current_amd64.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 	dpkg -i google-chrome-stable_current_amd64.deb
