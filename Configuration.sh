@@ -20,7 +20,7 @@ echo
 
 # Dotfiles
 curl https://raw.githubusercontent.com/githubato/Dotfiles/master/install.sh | sh \
-&& dotfiles host
+&& dotfiles guest
 echo
 
 # Gosu
