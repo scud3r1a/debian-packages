@@ -21,6 +21,14 @@ add-apt-repository ppa:danielrichter2007/grub-customizer --yes
 #############################################################################################
 echo
 
+# Clean up
+apt-get remove --yes \
+		abiword \
+		audacious \
+		gnumeric \
+		sylpheed \
+		transmission
+
 # Update, upgrade
 apt-get update --fix-missing
 apt-get dist-upgrade --force-yes --yes
@@ -97,7 +105,6 @@ apt-get install --force-yes --yes --no-install-recommends \
  		eclipse \
  		spyder \
  		gedit \
- 		vim \
  		gambas2 \
  		emacs \
  		idle \
@@ -151,8 +158,8 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 # Final upgrade
 clear
 echo
-
 apt-get upgrade --force-yes --yes
+
 apt-get autoremove --force-yes --yes
 apt-get clean
 
