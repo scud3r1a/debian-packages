@@ -6,15 +6,16 @@ add-apt-repository universe
 add-apt-repository multiverse
 add-apt-repository restricted
 echo
-add-apt-repository ppa:snappy-dev/tools \
-add-apt-repository ppa:graphics-drivers/ppa \
-add-apt-repository ppa:ehbello/fritzing \
-add-apt-repository ppa:sunab/sigil-git \
-add-apt-repository ppa:tualatrix/ppa \
-add-apt-repository ppa:paolorotolo/android-studio \
-apt-add-repository ppa:cordova-ubuntu/ppa \
-add-apt-repository ppa:pipelight/stable \
-apt-add-repository ppa:ehoover/compholio \
+add-apt-repository ppa:snappy-dev/tools --yes
+add-apt-repository ppa:graphics-drivers/ppa --yes
+add-apt-repository ppa:ehbello/fritzing --yes
+add-apt-repository ppa:sunab/sigil-git --yes
+add-apt-repository ppa:tualatrix/ppa --yes
+add-apt-repository ppa:paolorotolo/android-studio --yes
+apt-add-repository ppa:cordova-ubuntu/ppa --yes
+add-apt-repository ppa:pipelight/stable --yes
+apt-add-repository ppa:ehoover/compholio --yes
+add-apt-repository ppa:danielrichter2007/grub-customizer --yes
 
 	# Adding missing keys for repositories
 	apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 94558F59 \
@@ -32,6 +33,7 @@ apt-get update --fix-missin
 echo
 # Packages
 apt-get install --force-yes --yes --no-install-recommends \
+		ubuntu-restricted-extras \
 		tree \
 		dpkg \
 		build-essential \
@@ -124,11 +126,13 @@ apt-get install --force-yes --yes --no-install-recommends \
 	 	chromium-codecs-ffmpeg \
 	 	chromium-codecs-ffmpeg-extra \
  		keepassx \
- 		steam \
- 		nvidia-355
+ 		steam
 
 echo
+
 #############################################################################################
+
+# Static packages
 
 rm -rf deb
 wget https://atom.io/download/deb
