@@ -18,11 +18,6 @@ apt-cache policy docker-engine
 apt-get install --force-yes docker-engine
 echo
 
-# Dotfiles
-curl https://raw.githubusercontent.com/githubato/Dotfiles/master/install.sh | sh \
-&& dotfiles guest
-echo
-
 # Gosu
 curl -o /usr/local/bin/gosu -SL \
   "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
