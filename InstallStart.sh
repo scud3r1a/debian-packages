@@ -40,6 +40,8 @@ echo
 # Packages
 apt-get install --force-yes --yes --no-install-recommends \
 		ubuntu-restricted-extras \
+		mime-support \
+		desktop-file-utils \
 		tree \
 		dpkg \
 		build-essential \
@@ -57,7 +59,6 @@ apt-get install --force-yes --yes --no-install-recommends \
 		libfuse-dev \
 		apache2-utils \
 		libssl-dev \
-		which \
 		man \
 		ca-certificates \
 		vim \
@@ -67,8 +68,6 @@ apt-get install --force-yes --yes --no-install-recommends \
 		openssh-client \
 		openvpn \
 		openssl \
-		iputils \
-		iproute2 \
 		binfmt-support \
 		debootstrap \
 		dosfstools \
@@ -82,8 +81,7 @@ apt-get install --force-yes --yes --no-install-recommends \
 		synaptic \
 		privoxy \
 		samba \
-		spotify-client \
- 		vlc \
+		vlc \
  		shutter \
 		audacity \
 	 	libreoffice \
@@ -105,12 +103,8 @@ apt-get install --force-yes --yes --no-install-recommends \
  		eclipse \
  		spyder \
  		gedit \
- 		gambas2 \
  		emacs \
  		idle \
- 		lazarus \
- 		gtcreator \
- 		gambas3 \
  		geany \
 	 	android-tools-adb \
 	 	android-tools-fastboot \
@@ -124,14 +118,12 @@ apt-get install --force-yes --yes --no-install-recommends \
 	 	marble-qt \
 		thunderbird \
  		firefox \
- 		chromium \
-	 	chromium-l10n \
- 		chromium-browser \
-	 	chromium-browser-l10n \
-	 	chromium-codecs-ffmpeg \
-	 	chromium-codecs-ffmpeg-extra \
  		keepassx \
  		steam
+
+#############################################################################################
+
+apt-get -f install --force-yes --yes
 
 #############################################################################################
 echo
