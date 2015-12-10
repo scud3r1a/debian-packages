@@ -5,19 +5,13 @@ This is a very simple script that installs the most important normal-user applic
 for your Ubuntu (based) OS.
 
 ```
-clear && \
-  echo && \
-
 apt-get install -y git && \
   rm -f -r InstallStart && \
-  
+
 git clone "https://github.com/githubato/InstallStart" && \
   clear && \
     echo && \
-    
-sh InstallStart/InstallStart.sh && \
-  sh InstallStart/Configuration.sh 
-```
 
-Only working with Ubuntu or Ubuntu-like distributions
-Read "InstallStart.sh" and "Configuration.sh" to learn more.
+sh InstallStart/InstallStart.sh && \
+  sh InstallStart/Configuration.sh
+```
