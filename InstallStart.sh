@@ -8,6 +8,8 @@ add-apt-repository restricted
 echo
 clear
 
+add-apt-repository ppa:sunab/kdenlive-release
+echo
 add-apt-repository ppa:snappy-dev/tools --yes
 echo
 add-apt-repository ppa:graphics-drivers/ppa --yes
