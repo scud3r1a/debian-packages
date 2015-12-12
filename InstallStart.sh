@@ -8,7 +8,7 @@ add-apt-repository restricted
 echo
 clear
 
-add-apt-repository ppa:sunab/kdenlive-release
+add-apt-repository ppa:sunab/kdenlive-release --yes
 echo
 add-apt-repository ppa:snappy-dev/tools --yes
 echo
