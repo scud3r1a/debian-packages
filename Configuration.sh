@@ -2,7 +2,11 @@ echo
 echo Advanced configuration
 echo
 
+#############################################################################################
+
 GOSU_V=1.7
+
+#############################################################################################
 
 # Tor installation
 add-apt-repository ppa:webupd8team/tor-browser --yes
