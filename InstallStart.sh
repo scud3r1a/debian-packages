@@ -139,6 +139,8 @@ apt-get install --force-yes --yes --no-install-recommends \
 #############################################################################################
 echo
 
+dpkg --configure -a
+
 # Static packages: dependencies
 rm -rf deb
 wget https://atom.io/download/deb
