@@ -2,6 +2,8 @@ echo
 echo Advanced configuration
 echo
 
+GOSU_V=1.7
+
 # Tor installation
 add-apt-repository ppa:webupd8team/tor-browser --yes
 apt-get update --fix-missing
@@ -23,7 +25,7 @@ echo
 
 # Gosu
 curl -o /usr/local/bin/gosu -SL \
-  "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
+  "https://github.com/tianon/gosu/releases/download/$GOSU_V/gosu-$(dpkg --print-architecture)" \
 && chmod +x /usr/local/bin/gosu
 echo
 
