@@ -135,7 +135,9 @@ apt-get install --force-yes --yes --no-install-recommends \
  		firefox \
  		keepassx \
  		steam \
- 		grub-customizer
+ 		grub-customizer \
+ 		nodejs \
+ 		npm
 
 #############################################################################################
 echo
