@@ -1,3 +1,4 @@
+#############################################################################################
 echo
 
 # Adding required repositories
@@ -136,13 +137,33 @@ apt-get install --force-yes --yes --no-install-recommends \
  		steam
 
 #############################################################################################
+echo
 
-apt-get -f install --force-yes --yes
+# Static packages: dependencies
+rm -rf deb
+wget https://atom.io/download/deb
+	dpkg -i deb
+		rm -rf deb
+			echo
+
+rm -rf ipscan_3.3.3_amd64.deb
+wget https://github.com/angryziber/ipscan/releases/download/3.3.3/ipscan_3.3.3_amd64.deb
+	dpkg -i ipscan_3.3.3_amd64.deb
+		rm -rf ipscan_3.3.3_amd64.deb
+			echo
+
+rm -rf google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+	dpkg -i google-chrome-stable_current_amd64.deb
+		rm -rf google-chrome-stable_current_amd64.deb
+			echo
+
+apt-get -f install --yes
 
 #############################################################################################
 echo
 
-# Static packages
+# Static packages: installation
 rm -rf deb
 wget https://atom.io/download/deb
 	dpkg -i deb
@@ -175,4 +196,4 @@ echo
 echo "Done."
 echo
 
-###############################################################################
+#############################################################################################
