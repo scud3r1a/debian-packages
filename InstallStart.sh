@@ -9,25 +9,7 @@ add-apt-repository restricted
 echo
 clear
 
-add-apt-repository ppa:sunab/kdenlive-release --yes
-echo
 add-apt-repository ppa:snappy-dev/tools --yes
-echo
-add-apt-repository ppa:graphics-drivers/ppa --yes
-echo
-add-apt-repository ppa:ehbello/fritzing --yes
-echo
-add-apt-repository ppa:sunab/sigil-git --yes
-echo
-add-apt-repository ppa:tualatrix/ppa --yes
-echo
-add-apt-repository ppa:paolorotolo/android-studio --yes
-echo
-apt-add-repository ppa:cordova-ubuntu/ppa --yes
-echo
-add-apt-repository ppa:pipelight/stable --yes
-echo
-apt-add-repository ppa:ehoover/compholio --yes
 echo
 add-apt-repository ppa:danielrichter2007/grub-customizer --yes
 echo
@@ -64,6 +46,7 @@ apt-get install --force-yes --yes --no-install-recommends \
 		wget \
 		curl \
 		ntfs-3g \
+		rsync \
 		hfsutils \
 		hfsprogs \
 		exfat-fuse \
@@ -77,7 +60,6 @@ apt-get install --force-yes --yes --no-install-recommends \
 		bzip2 \
 		tar \
 		ca-certificates \
-		vim \
 		nano \
 		python \
 		openssh-server \
@@ -102,29 +84,22 @@ apt-get install --force-yes --yes --no-install-recommends \
 		audacity \
 	 	libreoffice \
 	 	dia \
-	 	kdenlive \
 	 	gimp \
 	 	inkscape \
 	 	k3b \
 	 	handbrake \
 	 	musescore \
 	 	calibre \
-	 	sigil \
 	 	scribus \
 		scribus-template \
 	 	lyx \
 	 	pdfchain \
 		pdftk \
- 		android-studio \
- 		eclipse \
- 		spyder \
- 		gedit \
- 		emacs \
- 		idle \
- 		geany \
 	 	android-tools-adb \
 	 	android-tools-fastboot \
- 		geogebra \
+		gnuplot \
+		maxima \
+		freemat \
  		gelemental \
  		avogadro \
  		logisim \
@@ -135,9 +110,7 @@ apt-get install --force-yes --yes --no-install-recommends \
  		firefox \
  		keepassx \
  		steam \
- 		grub-customizer \
- 		nodejs \
- 		npm
+ 		grub-customizer
 
 #############################################################################################
 echo
@@ -151,16 +124,22 @@ wget https://atom.io/download/deb
 		rm -rf deb
 			echo
 
-rm -rf ipscan_3.3.3_amd64.deb
-wget https://github.com/angryziber/ipscan/releases/download/3.3.3/ipscan_3.3.3_amd64.deb
-	dpkg -i ipscan_3.3.3_amd64.deb
-		rm -rf ipscan_3.3.3_amd64.deb
+rm -rf ipscan_3.4.1_amd64.deb
+wget https://github.com/angryziber/ipscan/releases/download/3.4.1/ipscan_3.4.1_amd64.deb
+	dpkg -i ipscan_3.4.1_amd64.deb
+		rm -rf ipscan_3.4.1_amd64.deb
 			echo
 
 rm -rf google-chrome-stable_current_amd64.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 	dpkg -i google-chrome-stable_current_amd64.deb
 		rm -rf google-chrome-stable_current_amd64.deb
+			echo
+
+rm -rf geogebra5_5.0.214.0-45980_amd64.deb
+http://www.geogebra.net/linux/pool/main/g/geogebra5/geogebra5_5.0.214.0-45980_amd64.deb
+	dpkg -i geogebra5_5.0.214.0-45980_amd64.deb
+		rm -rf geogebra5_5.0.214.0-45980_amd64.deb
 			echo
 
 apt-get -f install --yes
@@ -175,16 +154,22 @@ wget https://atom.io/download/deb
 		rm -rf deb
 			echo
 
-rm -rf ipscan_3.3.3_amd64.deb
-wget https://github.com/angryziber/ipscan/releases/download/3.3.3/ipscan_3.3.3_amd64.deb
-	dpkg -i ipscan_3.3.3_amd64.deb
-		rm -rf ipscan_3.3.3_amd64.deb
+rm -rf ipscan_3.4.1_amd64.deb
+wget https://github.com/angryziber/ipscan/releases/download/3.4.1/ipscan_3.4.1_amd64.deb
+	dpkg -i ipscan_3.4.1_amd64.deb
+		rm -rf ipscan_3.4.1_amd64.deb
 			echo
 
 rm -rf google-chrome-stable_current_amd64.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 	dpkg -i google-chrome-stable_current_amd64.deb
 		rm -rf google-chrome-stable_current_amd64.deb
+			echo
+
+rm -rf geogebra5_5.0.214.0-45980_amd64.deb
+http://www.geogebra.net/linux/pool/main/g/geogebra5/geogebra5_5.0.214.0-45980_amd64.deb
+	dpkg -i geogebra5_5.0.214.0-45980_amd64.deb
+		rm -rf geogebra5_5.0.214.0-45980_amd64.deb
 			echo
 
 #############################################################################################
