@@ -6,7 +6,7 @@ for your Ubuntu (based) OS.
 
 ```
 echo && \
-apt-get install --yes git && \
+apt-get install --yes curl wget git && \
 rm -rf InstallStart && \
 git clone "https://github.com/githubato/InstallStart" && \
 sh InstallStart/InstallStart.sh && \
