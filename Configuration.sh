@@ -4,16 +4,12 @@ echo
 
 #############################################################################################
 
-GOSU_V=1.7
-
-#############################################################################################
-
 # Tor installation
 add-apt-repository ppa:webupd8team/tor-browser --yes
 apt-get update --fix-missing
 apt-get install tor-browser --force-yes --yes
 add-apt-repository --remove ppa:webupd8team/tor-browser --yes
-apt-get update
+apt-get update --fix-missing
 echo
 
 # Docker installation
@@ -25,12 +21,6 @@ apt-get update --fix-missing
 apt-get purge lxc-docker*
 apt-cache policy docker-engine
 apt-get install docker-engine --force-yes --yes
-echo
-
-# Gosu
-curl -o /usr/local/bin/gosu -SL \
-  "https://github.com/tianon/gosu/releases/download/$GOSU_V/gosu-$(dpkg --print-architecture)" \
-&& chmod +x /usr/local/bin/gosu
 echo
 
 # easy
