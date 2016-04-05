@@ -16,14 +16,6 @@ echo
 
 #############################################################################################
 
-# Clean up
-apt-get remove --yes \
-		abiword \
-		audacious \
-		gnumeric \
-		sylpheed \
-		transmission
-
 # Update, upgrade
 apt-get update --fix-missing
 apt-get dist-upgrade --force-yes --yes
@@ -97,15 +89,16 @@ apt-get install --force-yes --yes --no-install-recommends \
 		pdftk \
 	 	android-tools-adb \
 	 	android-tools-fastboot \
-		gnuplot \
-		maxima \
-		freemat \
  		gelemental \
  		avogadro \
  		logisim \
  		lightspeed \
  		marble \
 	 	marble-qt \
+		melting \
+		melting-gui \
+		rasmol \
+		stellarium \
 		thunderbird \
  		firefox \
  		keepassx \
