@@ -1,18 +1,19 @@
 echo
-echo Advanced configuration
+echo "Advanced configuration"
 echo
 
 #############################################################################################
 
 # Docker installation
-apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
 rm -rf /etc/apt/sources.list.d/docker.list
 touch /etc/apt/sources.list.d/docker.list
-echo "deb https://apt.dockerproject.org/repo ubuntu-wily main" >> /etc/apt/sources.list.d/docker.list
+echo "deb https://apt.dockerproject.org/repo debian-jessie main" >> /etc/apt/sources.list.d/docker.list
 apt-get update --fix-missing
 apt-get purge lxc-docker*
 apt-cache policy docker-engine
 apt-get install docker-engine --force-yes --yes
+service docker start
 echo
 
 #############################################################################################

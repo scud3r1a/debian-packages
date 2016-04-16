@@ -50,13 +50,14 @@ apt-get install --force-yes --yes --no-install-recommends \
 		apt-cacher-ng \
 		openvpn \
 		privoxy \
+		apt-transport-https \
 		samba
 
 # Final upgrade
 clear
 echo
 apt-get upgrade --force-yes --yes
-
+echo
 apt-get autoremove --force-yes --yes
 apt-get clean
 

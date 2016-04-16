@@ -3,7 +3,6 @@ echo "Samba installation"
 echo
 
 apt-get update --fix-missing
-echo
 apt-get install --force-yes --yes samba samba-common-bin
 
 echo
