@@ -1,4 +1,4 @@
-## InstallStar
+## InstallStart
 
 This is a very simple script that installs the most important normal-user applications and packages
 for your Ubuntu (based) OS (desktop) or Debian (server).
