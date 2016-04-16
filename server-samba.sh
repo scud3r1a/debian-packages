@@ -14,6 +14,7 @@ smbpasswd -a root
 
 echo
 cp -avr InstallStart/smb.conf /etc/samba/smb.conf
+echo
 /etc/init.d/samba restart
 
 echo
