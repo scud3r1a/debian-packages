@@ -20,22 +20,12 @@ echo
 
 rm -rf virtualbox-5.0_5.0.16-105871~Debian~jessie_amd64.deb
 wget download.virtualbox.org/virtualbox/5.0.16/virtualbox-5.0_5.0.16-105871~Debian~jessie_amd64.deb
-dpkg -i virtualbox-5.0_5.0.16-105871~Debian~jessie_amd64.deb
+dpkg -i --force-depends virtualbox-5.0_5.0.16-105871~Debian~jessie_amd64.deb
+rm -rf virtualbox-5.0_5.0.16-105871~Debian~jessie_amd64.deb
 
 rm -rf vagrant_1.8.1_x86_64.deb
 wget https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_x86_64.deb
-dpkg -i vagrant_1.8.1_x86_64.deb
-
-#############################################################################################
-
-apt-get -f install --force-yes --yes
-
-#############################################################################################
-
-dpkg -i virtualbox-5.0_5.0.16-105871~Debian~jessie_amd64.deb
-rm -rf virtualbox-5.0_5.0.16-105871~Debian~jessie_amd64.deb
-
-dpkg -i vagrant_1.8.1_x86_64.deb
+dpkg -i --force-depends vagrant_1.8.1_x86_64.deb
 rm -rf vagrant_1.8.1_x86_64.deb
 
 #############################################################################################
