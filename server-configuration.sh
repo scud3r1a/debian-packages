@@ -4,6 +4,10 @@ echo
 
 #############################################################################################
 
+cp -avr InstallStart/sshd_config etc/ssh/sshd_config
+
+#############################################################################################
+
 # Docker installation
 apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
 rm -rf /etc/apt/sources.list.d/docker.list
@@ -18,10 +22,7 @@ echo
 
 #############################################################################################
 
-rm -rf virtualbox-5.0_5.0.16-105871~Debian~jessie_amd64.deb
-wget download.virtualbox.org/virtualbox/5.0.16/virtualbox-5.0_5.0.16-105871~Debian~jessie_amd64.deb
-dpkg -i --force-depends virtualbox-5.0_5.0.16-105871~Debian~jessie_amd64.deb
-rm -rf virtualbox-5.0_5.0.16-105871~Debian~jessie_amd64.deb
+apt-get install virtualbox --force-yes --yes
 
 rm -rf vagrant_1.8.1_x86_64.deb
 wget https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_x86_64.deb
