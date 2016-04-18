@@ -23,6 +23,8 @@ apt-get install --force-yes --yes --no-install-recommends \
 		preload \
 		wget \
 		curl \
+		htop \
+		nmap \
 		ntfs-3g \
 		rsync \
 		hfsutils \
