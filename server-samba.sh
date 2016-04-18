@@ -20,6 +20,8 @@ echo
 tail -n 17 /etc/samba/smb.conf
 echo
 
+mkdir -m 777 -p /vagrant /data
+
 echo
 echo "Done."
 echo
