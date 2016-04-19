@@ -10,6 +10,8 @@ echo
 
 # Packages
 apt-get install --force-yes --yes --no-install-recommends \
+tar \
+gzip \
 mime-support \
 desktop-file-utils \
 tree \
