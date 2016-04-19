@@ -1,8 +1,4 @@
 echo
-echo "Advanced configuration"
-echo
-
-#############################################################################################
 
 cp -avr sshd_config etc/ssh/sshd_config
 
@@ -31,13 +27,10 @@ rm -rf vagrant_1.8.1_x86_64.deb
 
 #############################################################################################
 
+apt-get update --fix-missing
 apt-get dist-upgrade --force-yes --yes
 apt-get -f install --force-yes --yes
-
+echo
 apt-get upgrade --force-yes --yes
 apt-get autoremove --force-yes --yes
 apt-get clean
-
-echo
-echo "Done."
-echo

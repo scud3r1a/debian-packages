@@ -1,3 +1,5 @@
+echo
+
 apt-get update --fix-missing
 apt-get install --force-yes --yes samba samba-common-bin
 

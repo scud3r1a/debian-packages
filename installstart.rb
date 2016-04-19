@@ -6,11 +6,12 @@ ARGV.each do|a|
   var = a.to_s
 
   puts ""
+  puts "InstallStart"
+  puts ""
   puts "_______________________________________________________________________________________________"
   puts ""
   puts ""
   puts "#{var}"
-  puts ""
   system "sh", "InstallStart/#{var}.sh"
   puts ""
 

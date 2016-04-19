@@ -54,6 +54,7 @@ apt-transport-https
 echo
 
 # Final upgrade
+apt-get update --fix-missing
 apt-get upgrade --force-yes --yes
 echo
 apt-get autoremove --force-yes --yes
