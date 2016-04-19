@@ -12,7 +12,7 @@ ARGV.each do|a|
   puts ""
   puts ""
   puts "#{var}"
-  system "sh", "InstallStart/#{var}.sh"
+  system "sh", "#{var}.sh"
   puts ""
 
 end
