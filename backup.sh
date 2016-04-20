@@ -1,11 +1,20 @@
 mkdir -m 777 -p /backup
 chmod -R 777 /backup
 
-DAY=`date +"%D"`
-TIME=`date +"%T"`
+echo
 
-tar -cvz -f /backup/data-$DAY-$TIME.tar.gz /data/
-tar -cvz -f /backup/vagrant-$DAY-$TIME.tar.gz /vagrant/
-tar -cvz -f /backup/root-$DAY-$TIME.tar.gz /root/
+echo "/data"
+tar -cvz -f /backup/data-`date +"%d"`-`date +"%m"`-`date +"%y"`-`date +"%s"`.tar.gz /data/
+echo
 
-rm -rf tmpbck.txt
+echo "/vagrant"
+tar -cvz -f /backup/vagrant-`date +"%d"`-`date +"%m"`-`date +"%y"`-`date +"%s"`.tar.gz /vagrant/
+echo
+
+echo "/root"
+tar -cvz -f /backup/root-`date +"%d"`-`date +"%m"`-`date +"%y"`-`date +"%s"`.tar.gz /root/
+echo
+
+echo
+echo "Done."
+echo
