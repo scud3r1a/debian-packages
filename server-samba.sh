@@ -18,4 +18,5 @@ echo
 tail -n 17 /etc/samba/smb.conf
 echo
 
-mkdir -m 777 -p /vagrant /data
+mkdir -m 777 -p /vagrant /data /backup
+chmod -R 777 /vagrant /data /backup

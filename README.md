@@ -15,5 +15,5 @@ echo && \
 echo "Done" && \
 echo
 
-ruby installstart.rb <base> <desktop> <virtual> <samba>
+ruby installstart.rb <base> <desktop> <server> <samba>
 ```

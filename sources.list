@@ -1,0 +1,10 @@
+deb http://ftp.halifax.rwth-aachen.de/debian/ jessie main non-free contrib
+deb-src http://ftp.halifax.rwth-aachen.de/debian/ jessie main non-free contrib
+
+deb http://security.debian.org/ jessie/updates main contrib non-free
+deb-src http://security.debian.org/ jessie/updates main contrib non-free
+
+deb http://ftp.halifax.rwth-aachen.de/debian/ jessie-updates main contrib non-free
+deb-src http://ftp.halifax.rwth-aachen.de/debian/ jessie-updates main contrib non-free
+
+deb http://httpredir.debian.org/debian/ jessie main contrib
