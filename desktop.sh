@@ -41,8 +41,6 @@ scribus-template \
 lyx \
 pdfchain \
 pdftk \
-android-tools-adb \
-android-tools-fastboot \
 gelemental \
 avogadro \
 logisim \

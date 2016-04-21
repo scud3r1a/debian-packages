@@ -10,6 +10,7 @@ echo
 
 # Packages
 apt-get install --force-yes --yes --no-install-recommends \
+ubuntu-restricted-extras \
 tar \
 gzip \
 mime-support \
@@ -24,11 +25,7 @@ wget \
 curl \
 htop \
 nmap \
-ntfs-3g \
 rsync \
-hfsutils \
-hfsprogs \
-exfat-fuse \
 archivemount \
 makeself \
 libfuse-dev \
@@ -51,7 +48,9 @@ apt-cacher-ng \
 openvpn \
 privoxy \
 apt-transport-https \
+docker.io \
 ruby \
+nfs-kernel-server \
 nfs-common
 
 #############################################################################################
