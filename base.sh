@@ -52,7 +52,8 @@ openvpn \
 privoxy \
 apt-transport-https \
 ruby \
-nfs-common
+nfs-common \
+lm-sensors
 
 #############################################################################################
 echo

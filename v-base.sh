@@ -10,7 +10,6 @@ echo
 
 # Packages
 apt-get install --force-yes --yes --no-install-recommends \
-ubuntu-restricted-extras \
 tar \
 gzip \
 mime-support \
