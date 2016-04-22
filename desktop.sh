@@ -1,8 +1,6 @@
 echo
 
 # Repositories
-add-apt-repository ppa:snappy-dev/tools --yes
-echo
 add-apt-repository ppa:danielrichter2007/grub-customizer --yes
 echo
 
@@ -55,7 +53,9 @@ thunderbird \
 firefox \
 keepassx \
 steam \
-grub-customizer
+grub-customizer \
+dconf-tools \
+dconf-editor 
 
 #############################################################################################
 echo
