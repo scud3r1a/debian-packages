@@ -10,5 +10,11 @@ echo
 apt-get update --fix-missing
 echo
 
-apt-get install --force-yes ubuntu-restricted-extras unity-tweak-tool
+apt-get install --force-yes --yes \
+ubuntu-restricted-extras \
+unity-tweak-tool \
+bzr \
+snapd \
+snapcraft
+
 echo
