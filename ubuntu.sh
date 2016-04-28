@@ -15,6 +15,18 @@ ubuntu-restricted-extras \
 unity-tweak-tool \
 bzr \
 snapd \
-snapcraft
+snapcraft \
+lame \
+unrar \
+gstreamer1.0-fluendo-mp3 \
+gstreamer1.0-plugins-bad \
+gstreamer1.0-plugins-ugly \
+gstreamer1.0-libav \
+gstreamer1.0-fluendo-mp3 \
+libdvdread4 \
+libk3b6-extracodecs \
+oxideqt-codecs-extra \
+libavcodec-extra \
+libavcodec-ffmpeg-extra56
 
 echo
