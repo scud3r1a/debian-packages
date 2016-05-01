@@ -55,7 +55,7 @@ nfs-common
 #############################################################################################
 echo
 
-# Upgrade
+# Final upgrade
 apt-get update --fix-missing
 apt-get upgrade --force-yes --yes
 echo
@@ -63,18 +63,3 @@ apt-get autoremove --force-yes --yes
 apt-get clean
 
 echo
-
-#############################################################################################
-
-# SSH
-cp -avr sshd_config etc/ssh/sshd_config
-
-#############################################################################################
-
-apt-get update --fix-missing
-apt-get dist-upgrade --force-yes --yes
-apt-get -f install --force-yes --yes
-echo
-apt-get upgrade --force-yes --yes
-apt-get autoremove --force-yes --yes
-apt-get clean
