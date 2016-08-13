@@ -13,10 +13,3 @@ echo
 cp -avr smb.conf /etc/samba/smb.conf
 echo
 /etc/init.d/samba restart
-
-echo
-tail -n 17 /etc/samba/smb.conf
-echo
-
-mkdir -m 777 -p /vagrant /data /backup
-chmod -R 777 /vagrant /data /backup
