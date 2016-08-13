@@ -39,7 +39,6 @@ unzip \
 bzip2 \
 ca-certificates \
 nano \
-python \
 openssh-server \
 openssh-client \
 openvpn \
@@ -48,12 +47,11 @@ binfmt-support \
 debootstrap \
 dosfstools \
 apt-cacher-ng \
-openvpn \
 privoxy \
 apt-transport-https \
-ruby \
 nfs-common \
-lm-sensors
+lm-sensors \
+cpulimit
 
 #############################################################################################
 echo

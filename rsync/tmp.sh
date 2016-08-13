@@ -1,1 +1,0 @@
-sh sync-loop.sh

@@ -20,20 +20,14 @@ apt-get install --force-yes --yes --no-install-recommends \
 wine \
 playonlinux \
 filezilla \
-wireshark \
-tshark \
 synaptic \
 vlc \
 shutter \
-audacity \
 libreoffice \
-dia \
 gimp \
 inkscape \
-k3b \
 handbrake \
 musescore \
-calibre \
 scribus \
 scribus-template \
 lyx \
@@ -55,7 +49,7 @@ keepassx \
 steam \
 grub-customizer \
 dconf-tools \
-dconf-editor 
+dconf-editor
 
 #############################################################################################
 echo
