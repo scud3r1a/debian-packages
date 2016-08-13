@@ -42,7 +42,6 @@ marble-qt \
 melting \
 melting-gui \
 rasmol \
-stellarium \
 thunderbird \
 firefox \
 keepassx \

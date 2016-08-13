@@ -13,7 +13,6 @@ apt-get install --force-yes --yes --no-install-recommends \
 tar \
 gzip \
 mime-support \
-sshpass \
 desktop-file-utils \
 tree \
 dpkg \
