@@ -17,6 +17,7 @@ bzr \
 snapd \
 snapcraft \
 lame \
+lxd \
 unrar \
 gstreamer1.0-fluendo-mp3 \
 gstreamer1.0-plugins-bad \
