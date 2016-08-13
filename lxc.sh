@@ -3,6 +3,7 @@
 apt-get install --yes \
   lxc \
   debootstrap \
-  bridge-utils 
+  bridge-utils \
+  libvirt-bin
   
 mount cgroup -t cgroup /sys/fs/cgroup
