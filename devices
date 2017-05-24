@@ -1,0 +1,43 @@
+FLAG=$1
+UPSTART="up"
+
+date -s  "$(curl -s -k --head http://google.com | grep ^Date: | sed 's/Date: //g')"
+
+if [ "$FLAG" == "$UPSTART" ]; then
+
+# Mount devices
+mount -t ntfs-3g -o utf8,uid=root,gid=root,noatime /dev/sdc1 /media/Passport
+
+echo
+# Mount VeraCrypt/TrueCrypt containers
+veracrypt -t -k "" --protect-hidden=no /media/Local/CONTAINER100G    /media/Volume0 # Data
+veracrypt -t -k "" --protect-hidden=no /media/Passport/CONTAINER50G  /media/Volume1 # Archiv
+veracrypt -t -k "" --protect-hidden=no /media/Passport/CONTAINER40G  /media/Volume2 # Bibliothek
+veracrypt -t -k "" --protect-hidden=no /media/Passport/CONTAINER160G /media/Volume3 # Video
+veracrypt -t -k "" --protect-hidden=no /media/Local/CONTAINER100M    /media/Volume4 # Privat
+
+bash gotty-start.sh &
+
+else
+sleep 0
+fi
+
+echo ================================================================================
+
+# Show devices, disk spaces and mounting points
+echo && blkid -o list -w /dev/null
+echo
+echo ================================================================================
+echo && df -h |sed -n '1p' && df -h | grep ^/dev
+echo
+
+echo ================================================================================
+
+echo
+ls -l -h  /media/Local/ /media/Passport/
+echo
+ls -l -h /media/Local/Backup/ /media/Passport/Backup/
+echo
+
+echo ================================================================================
+echo
