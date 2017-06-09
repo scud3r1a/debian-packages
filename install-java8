@@ -1,0 +1,19 @@
+MIRROR_ID="1253"
+ECLIPSE_URL="https://www.eclipse.org/downloads/download.php?file=/oomph/epp/neon/R3/eclipse-inst-linux64.tar.gz&mirror_id=${MIRROR_ID}"
+
+mkdir -m 777 -p /tmp
+pushd /tmp
+
+# Download Java 8
+echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee /etc/apt/sources.list.d/webupd8team-java.list
+echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
+apt-get update --fix-missing
+apt-get install oracle-java8-installer --yes 
+
+# Download Eclipse
+curl ${ECLIPSE_URL} -o eclipse.tar.gz
+tar -zxvf eclipse.tar.gz
+
+popd
+rm -rf /tmp
