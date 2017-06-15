@@ -1,7 +1,7 @@
 echo
 
 apt-get update --fix-missing
-apt-get install --force-yes --yes samba samba-common-bin
+apt-get install --force-yes --yes samba samba-common-bin ntfs-3g hfsutils hfsprogs exfat-fuse
 
 mkdir -m 777 -p /media/Volume0
 mkdir -m 777 -p /media/Volume1
