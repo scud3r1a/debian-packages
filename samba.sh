@@ -8,6 +8,7 @@ mkdir -m 777 -p /media/Volume1
 mkdir -m 777 -p /media/Volume2
 mkdir -m 777 -p /media/Volume3
 mkdir -m 777 -p /media/Volume4
+mkdir -m 777 -p /media/Passport
 
 echo
 echo "New user (Samba): root"
