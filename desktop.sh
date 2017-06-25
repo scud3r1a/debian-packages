@@ -28,27 +28,20 @@ gimp \
 inkscape \
 handbrake \
 musescore \
-scribus \
-scribus-template \
 lyx \
+texinfo \
 pdfchain \
 pdftk \
 gelemental \
 avogadro \
-logisim \
-lightspeed \
-marble \
-marble-qt \
-melting \
-melting-gui \
-rasmol \
-thunderbird \
 firefox \
 keepassx \
-steam \
 grub-customizer \
 dconf-tools \
-dconf-editor
+dconf-editor \
+qt5-default \
+codeblocks \
+qtcreator
 
 #############################################################################################
 echo
@@ -70,12 +63,6 @@ rm -rf google-chrome-stable_current_amd64.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 dpkg -i --force-depends google-chrome-stable_current_amd64.deb
 rm -rf google-chrome-stable_current_amd64.deb
-echo
-
-rm -rf geogebra5_5.0.214.0-45980_amd64.deb
-http://www.geogebra.net/linux/pool/main/g/geogebra5/geogebra5_5.0.214.0-45980_amd64.deb
-dpkg -i --force-depends geogebra5_5.0.214.0-45980_amd64.deb
-rm -rf geogebra5_5.0.214.0-45980_amd64.deb
 echo
 
 #############################################################################################
