@@ -23,6 +23,8 @@ wget \
 curl \
 htop \
 nmap \
+make \
+cmake \
 ntfs-3g \
 rsync \
 hfsutils \
@@ -43,14 +45,14 @@ openssh-client \
 openvpn \
 openssl \
 binfmt-support \
-debootstrap \
+# debootstrap \
 dosfstools \
 apt-cacher-ng \
 privoxy \
 apt-transport-https \
 nfs-common \
-lm-sensors \
-cpulimit
+lm-sensors # \
+# cpulimit
 
 #############################################################################################
 echo
