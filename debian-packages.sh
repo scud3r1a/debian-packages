@@ -1,30 +1,38 @@
 # Variables
-OS=ubuntu
-DEBAIN_VERSION=jessie
-UBUNTU_VERSION=17.04
 ARCH=AMD64
+OS=ubuntu
+# DEBAIN_VERSION=jessie
+UBUNTU_VERSION=17.04
 
 # ================================================================================================
+
+NONE=""
 
 # Flags
 FLAGS_STRING=$@
 
-FLAG_SNAP=0
-FLAG_SNAP_CHECK=`echo $FLAGS_STRING | grep "snap"`
-
-FLAG_NVIDIA=0
-FLAG_NVIDIA_CHECK=`echo $FLAGS_STRING | grep "nvidia"`
 
 
-
-if [ FLAG_SNAP_CHECK != "" ]
-then
-    FLAG_SNAP=1
-fi
-if [ FLAG_NVIDIA_CHECK != "" ]
+FLAG_NVIDIA=1
+FLAG_NVIDIA_CHECK=$(echo $FLAGS_STRING | grep "nvidia")
+if [ $? -eq 0 ]
 then
     FLAG_NVIDIA=1
 fi
+
+
+FLAG_SNAP=1
+FLAG_SNAP_CHECK=$(echo $FLAGS_STRING | grep "snap")
+if [ $? -eq 1 ]
+then
+    FLAG_SNAP=0
+fi
+
+echo $FLAG_SNAP
+echo $FLAG_NVIDIA
+
+sleep 182938918398129839
+
 
 
 # ================================================================================================
@@ -101,6 +109,7 @@ then
         gstreamer1.0-libav \
         gstreamer1.0-fluendo-mp3 \
         libdvdread4 \
+        libk3b6-extracodecs \
         oxideqt-codecs-extra \
         libavcodec-extra \
         libavcodec-ffmpeg-extra56
@@ -113,11 +122,6 @@ then
                 snapcraft
         fi
 fi
-
-# Debian
-# if [ $OS == debian ]
-# then 
-#        libk3b6-extracodecs
 
 # ================================================================================================
 
