@@ -142,6 +142,12 @@ popd
 
 # ================================================================================================
 
+# Nvidia
+apt-add-repository --yes ppa:graphics-drivers/ppa
+apt-get install nvidia-375 nvidia-settings --yes
+
+# ================================================================================================
+
 # Final update
 apt-get dist-upgrade --yes --force-yes
 
