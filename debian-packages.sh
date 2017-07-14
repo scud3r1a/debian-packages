@@ -58,7 +58,9 @@ apt-get install --force-yes --yes --no-install-recommends \
     nfs-kernel-server \
     nfs-common \
     apt-transport-https \
-    nfs-common
+    nfs-common \
+    p7zip-full \
+    p7zip-rar
 
 # Debian
 if [ $OS == debian ]
