@@ -1,5 +1,5 @@
 # Set variables
-OCV_VERSION=3.2.0
+OCV_VERSION=4.2.0
 OCV_DIR=~/opencv-$OCV_VERSION
 
 apt-get update
@@ -9,7 +9,7 @@ apt-get install -y \
 build-essential \
 cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev \
 python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev \
-libgtk2.0-dev pkg-config \
+libgtk2.0-dev pkg-config unzip \
 wget
 
 # Pull sources
